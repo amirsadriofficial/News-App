@@ -70,6 +70,7 @@ const App = () => {
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
           <Section title="Step One">
+            {/* eslint-disable-next-line prettier/prettier */}
             Edit <Text style={styles.highlight}>App.tsx Amir Sadri</Text> to change this
             screen and then come back to see your edits.
           </Section>
