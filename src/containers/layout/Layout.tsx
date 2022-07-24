@@ -3,7 +3,6 @@
  */
 
 import React from 'react';
-import {Text} from 'react-native';
 import Header from './../header/Header';
 import Footer from './../footer/Footer';
 

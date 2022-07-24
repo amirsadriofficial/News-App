@@ -3,8 +3,8 @@
  */
 
 import React from 'react';
-import Home from './components/home/Home';
 import Layout from './containers/layout/Layout';
+import Home from './components/home/Home';
 
 const App = () => {
   return (
