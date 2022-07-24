@@ -3,14 +3,12 @@
  */
 
 import React from 'react';
-import {Text} from 'react-native';
 import Home from './components/home';
 
 const App = () => {
   return (
     <>
-    <Text>Hello world</Text>
-    <Home />
+      <Home />
     </>
   );
 };
