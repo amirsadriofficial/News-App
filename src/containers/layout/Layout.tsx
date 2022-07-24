@@ -7,15 +7,15 @@ import {Text} from 'react-native';
 import Header from './../header/Header';
 import Footer from './../footer/Footer';
 
-// type LayoutProps = {
-//   children: any;
-// };
+type LayoutProps = {
+  children: any;
+};
 
-const Layout = () => {
+const Layout = ({children}: LayoutProps) => {
   return (
     <>
       <Header />
-      <Text>This is Layout section</Text>
+      {children}
       <Footer />
     </>
   );

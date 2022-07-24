@@ -4,11 +4,14 @@
 
 import React from 'react';
 import Home from './components/home/Home';
+import Layout from './containers/layout/Layout';
 
 const App = () => {
   return (
     <>
-      <Home />
+      <Layout>
+        <Home />
+      </Layout>
     </>
   );
 };
