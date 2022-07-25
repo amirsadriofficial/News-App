@@ -4,7 +4,7 @@
 
 import React from 'react';
 import Layout from './containers/layout/Layout';
-import Home from './components/home/Home';
+import Home from './screens/home/Home';
 
 const App = () => {
   return (
