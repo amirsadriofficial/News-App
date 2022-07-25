@@ -3,15 +3,15 @@
  */
 
 import React from 'react';
-import {Text} from 'react-native';
+import {Text, SafeAreaView} from 'react-native';
 
 const Header = () => {
   return (
-    <>
+    <SafeAreaView>
       <Text>Profile</Text>
       <Text>Notification</Text>
       <Text>Search</Text>
-    </>
+    </SafeAreaView>
   );
 };
 
