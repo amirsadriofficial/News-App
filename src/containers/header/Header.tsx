@@ -3,14 +3,21 @@
  */
 
 import React from 'react';
-import {Text, SafeAreaView} from 'react-native';
+import {Text, Image, View} from 'react-native';
+import styles from './Header.style';
 
 const Header = () => {
   return (
-    <SafeAreaView>
-      <Text>Amir Sadri</Text>
-      <Text>@amirsadri</Text>
-    </SafeAreaView>
+    <View style={styles.header}>
+      <Image
+        style={styles.headerAvatar}
+        source={require('./../../assets/avatar/profile.jpg')}
+      />
+      <View style={styles.headerText}>
+        <Text style={styles.headerName}>Amir Sadri</Text>
+        <Text style={styles.headerUsername}>@amirsadri</Text>
+      </View>
+    </View>
   );
 };
 
