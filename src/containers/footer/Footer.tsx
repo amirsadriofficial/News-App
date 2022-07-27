@@ -15,8 +15,8 @@ const Footer = () => {
     <SafeAreaView>
       <Octicons name="home" size={50} color="#000" />
       <Feather name="search" size={50} color="#000" />
-      <Ionicons name="notifications-outline" size={50} color="#000" />
       <FontAwesome name="bookmark-o" size={50} color="#000" />
+      <Ionicons name="notifications-outline" size={50} color="#000" />
       <AntDesign name="user" size={50} color="#000" />
     </SafeAreaView>
   );
