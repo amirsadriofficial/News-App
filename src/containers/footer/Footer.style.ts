@@ -5,8 +5,9 @@ export default StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     position: 'relative',
-    bottom: -615,
+    bottom: -600,
     backgroundColor: '#eee',
+    paddingVertical: 10,
   },
   footerItems: {
     display: 'flex',
