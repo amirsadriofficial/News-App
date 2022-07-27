@@ -4,15 +4,12 @@
 
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
-import Layout from './containers/layout/Layout';
 import Home from './screens/home/Home';
 
 const App = () => {
   return (
     <View style={styles.App}>
-      <Layout>
-        <Home />
-      </Layout>
+      <Home />
     </View>
   );
 };

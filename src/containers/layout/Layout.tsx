@@ -1,23 +1,21 @@
-/**
- * @format
- */
+// /**
+//  * @format
+//  */
 
-import React from 'react';
-import Header from './../header/Header';
-import Footer from './../footer/Footer';
+// import React from 'react';
+// import Footer from './../footer/Footer';
 
-type LayoutProps = {
-  children: any;
-};
+// type LayoutProps = {
+//   children: any;
+// };
 
-const Layout = ({children}: LayoutProps) => {
-  return (
-    <>
-      <Header />
-      {children}
-      <Footer />
-    </>
-  );
-};
+// const Layout = ({children}: LayoutProps) => {
+//   return (
+//     <>
+//       {children}
+//       <Footer />
+//     </>
+//   );
+// };
 
-export default Layout;
+// export default Layout;

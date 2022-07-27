@@ -5,7 +5,7 @@
 import React from 'react';
 import {Text, Image, View} from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import styles from './Header.style';
+import styles from './styles/Header.style';
 
 const Header = () => {
   return (
