@@ -7,18 +7,7 @@ import React from 'react';
 import Icon from 'react-native-vector-icons/Feather';
 
 const Footer = () => {
-  // const Home = <Icon name="home" size={30} color="#900" />;
-
-  return (
-    <>
-      {/* <Text>Home</Text> */}
-      <Icon name="home" size={100} color="#000" />
-      {/* <Text>Explore</Text>
-      <Text>Save</Text>
-      <Text>Notification</Text>
-      <Text>Profile</Text> */}
-    </>
-  );
+  return <Icon name="search" size={50} color="#ccc" />;
 };
 
 export default Footer;
