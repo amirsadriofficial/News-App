@@ -5,6 +5,7 @@ export default StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     marginHorizontal: 8,
+    backgroundColor: '#eee',
     // borderRadius: 10,
     // marginBottom: 8,
     // paddingHorizontal: 16,

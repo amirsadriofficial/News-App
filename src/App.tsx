@@ -3,16 +3,17 @@
  */
 
 import React from 'react';
+import {StyleSheet, View} from 'react-native';
 import Layout from './containers/layout/Layout';
 import Home from './screens/home/Home';
 
 const App = () => {
   return (
-    <>
+    <View style={styles.App}>
       <Layout>
         <Home />
       </Layout>
-    </>
+    </View>
   );
 };
 // import React, {type PropsWithChildren} from 'react';
@@ -103,23 +104,24 @@ const App = () => {
 //   );
 // };
 
-// const styles = StyleSheet.create({
-//   sectionContainer: {
-//     marginTop: 32,
-//     paddingHorizontal: 24,
-//   },
-//   sectionTitle: {
-//     fontSize: 24,
-//     fontWeight: '600',
-//   },
-//   sectionDescription: {
-//     marginTop: 8,
-//     fontSize: 18,
-//     fontWeight: '400',
-//   },
-//   highlight: {
-//     fontWeight: '700',
-//   },
-// });
+const styles = StyleSheet.create({
+  App: {
+    backgroundColor: '#eee',
+    // marginTop: 32,
+    // paddingHorizontal: 24,
+  },
+  // sectionTitle: {
+  //   fontSize: 24,
+  //   fontWeight: '600',
+  // },
+  // sectionDescription: {
+  //   marginTop: 8,
+  //   fontSize: 18,
+  //   fontWeight: '400',
+  // },
+  // highlight: {
+  //   fontWeight: '700',
+  // },
+});
 
 export default App;
