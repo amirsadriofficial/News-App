@@ -6,7 +6,6 @@ import React from 'react';
 import {SafeAreaView, View, Text} from 'react-native';
 import Feather from 'react-native-vector-icons/Feather';
 import Octicons from 'react-native-vector-icons/Octicons';
-import Ionicons from 'react-native-vector-icons/Ionicons';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import styles from './Footer.style'
@@ -25,10 +24,6 @@ const Footer = () => {
       <View style={styles.footerItems}>
         <FontAwesome name="bookmark-o" size={50} color="#000" />
         <Text>Saved</Text>
-      </View>
-      <View style={styles.footerItems}>
-        <Ionicons name="notifications-outline" size={50} color="#000" />
-        <Text>Notifications</Text>
       </View>
       <View style={styles.footerItems}>
         <AntDesign name="user" size={50} color="#000" />

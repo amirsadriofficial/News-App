@@ -4,6 +4,7 @@
 
 import React from 'react';
 import {Text, Image, View} from 'react-native';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 import styles from './Header.style';
 
 const Header = () => {
@@ -18,6 +19,9 @@ const Header = () => {
           <Text style={styles.headerName}>Amir Sadri</Text>
           <Text style={styles.headerUsername}>@amirsadri</Text>
         </View>
+      </View>
+      <View style={styles.headerNotification}>
+        <Ionicons name="notifications-outline" size={25} color="#000" />
       </View>
     </View>
   );
