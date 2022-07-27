@@ -14,19 +14,19 @@ const Footer = () => {
   return (
     <SafeAreaView style={styles.footer}>
       <View style={styles.footerItems}>
-        <Octicons name="home" size={50} color="#000" />
+        <Octicons name="home" size={30} color="#000" />
         <Text>Home</Text>
       </View>
       <View style={styles.footerItems}>
-        <Feather name="search" size={50} color="#000" />
+        <Feather name="search" size={30} color="#000" />
         <Text>Search</Text>
       </View>
       <View style={styles.footerItems}>
-        <FontAwesome name="bookmark-o" size={50} color="#000" />
+        <FontAwesome name="bookmark-o" size={30} color="#000" />
         <Text>Saved</Text>
       </View>
       <View style={styles.footerItems}>
-        <AntDesign name="user" size={50} color="#000" />
+        <AntDesign name="user" size={30} color="#000" />
         <Text>Profile</Text>
       </View>
     </SafeAreaView>

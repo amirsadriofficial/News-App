@@ -5,14 +5,14 @@ export default StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     position: 'relative',
-    bottom: -620,
-    backgroundColor: '#cfcfcf',
+    bottom: -615,
+    backgroundColor: '#eee',
   },
   footerItems: {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    marginHorizontal: 12,
+    marginHorizontal: 27,
   },
 });
