@@ -8,7 +8,7 @@ import Feather from 'react-native-vector-icons/Feather';
 import Octicons from 'react-native-vector-icons/Octicons';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import AntDesign from 'react-native-vector-icons/AntDesign';
-import styles from './styles/Footer.style'
+import styles from './styles/Footer.style';
 
 const Footer = () => {
   return (
