@@ -14,23 +14,23 @@ import styles from './Footer.style'
 const Footer = () => {
   return (
     <SafeAreaView style={styles.footer}>
-      <View style={styles.footer}>
+      <View style={styles.footerItems}>
         <Octicons name="home" size={50} color="#000" />
         <Text>Home</Text>
       </View>
-      <View style={styles.footer}>
+      <View style={styles.footerItems}>
         <Feather name="search" size={50} color="#000" />
         <Text>Search</Text>
       </View>
-      <View style={styles.footer}>
+      <View style={styles.footerItems}>
         <FontAwesome name="bookmark-o" size={50} color="#000" />
         <Text>Saved</Text>
       </View>
-      <View style={styles.footer}>
+      <View style={styles.footerItems}>
         <Ionicons name="notifications-outline" size={50} color="#000" />
         <Text>Notifications</Text>
       </View>
-      <View style={styles.footer}>
+      <View style={styles.footerItems}>
         <AntDesign name="user" size={50} color="#000" />
         <Text>Profile</Text>
       </View>
