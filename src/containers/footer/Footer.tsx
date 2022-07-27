@@ -19,7 +19,7 @@ const Footer = () => {
       </View>
       <View style={styles.footerItems}>
         <Feather name="search" size={30} color="#000" />
-        <Text>Search</Text>
+        <Text>Explore</Text>
       </View>
       <View style={styles.footerItems}>
         <FontAwesome name="bookmark-o" size={30} color="#000" />
