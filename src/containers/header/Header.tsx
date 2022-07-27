@@ -8,9 +8,8 @@ import {Text, SafeAreaView} from 'react-native';
 const Header = () => {
   return (
     <SafeAreaView>
-      <Text>Profile</Text>
-      <Text>Notification</Text>
-      <Text>Search</Text>
+      <Text>Amir Sadri</Text>
+      <Text>@amirsadri</Text>
     </SafeAreaView>
   );
 };
