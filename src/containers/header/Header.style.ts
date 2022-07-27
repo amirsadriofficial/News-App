@@ -2,6 +2,12 @@ import {StyleSheet} from 'react-native';
 
 export default StyleSheet.create({
   header: {
+    // display: 'flex',
+    // flexDirection: 'row',
+    // alignItems: 'center',
+    // margin: 8,
+  },
+  headerProfile: {
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
