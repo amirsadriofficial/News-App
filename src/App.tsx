@@ -13,6 +13,7 @@ const App = () => {
     </View>
   );
 };
+
 // import React, {type PropsWithChildren} from 'react';
 // import {
 //   SafeAreaView,
@@ -23,7 +24,6 @@ const App = () => {
 //   useColorScheme,
 //   View,
 // } from 'react-native';
-
 // import {
 //   Colors,
 //   DebugInstructions,
@@ -64,7 +64,6 @@ const App = () => {
 
 // const App = () => {
 //   const isDarkMode = useColorScheme() === 'dark';
-
 //   const backgroundStyle = {
 //     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
 //   };
@@ -104,8 +103,6 @@ const App = () => {
 const styles = StyleSheet.create({
   App: {
     backgroundColor: '#eee',
-    // marginTop: 32,
-    // paddingHorizontal: 24,
   },
   // sectionTitle: {
   //   fontSize: 24,
