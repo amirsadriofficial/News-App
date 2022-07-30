@@ -17,7 +17,7 @@ const renderScene = SceneMap({
   second: SecondRoute,
 });
 
-export default function TabViewExample() {
+const Home = () => {
   const layout = useWindowDimensions();
 
   const [index, setIndex] = React.useState(0);
@@ -34,8 +34,9 @@ export default function TabViewExample() {
       initialLayout={{width: layout.width}}
     />
   );
-}
+};
 
+export default Home;
 // import React from 'react';
 // import {Text} from 'react-native';
 // import Header from './Header';
