@@ -254,7 +254,6 @@ android {
         }
     }
 }
-
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
 
@@ -284,6 +283,7 @@ dependencies {
     } else {
         implementation jscFlavor
     }
+    implementation project(':react-native-pager-view')
 }
 
 if (isNewArchitectureEnabled()) {

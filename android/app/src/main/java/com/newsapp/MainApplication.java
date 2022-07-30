@@ -12,6 +12,7 @@ import com.facebook.soloader.SoLoader;
 import com.newsapp.newarchitecture.MainApplicationReactNativeHost;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
+import com.reactnativepagerview.PagerViewPackage;
 
 public class MainApplication extends Application implements ReactApplication {
 
@@ -87,5 +88,13 @@ public class MainApplication extends Application implements ReactApplication {
         e.printStackTrace();
       }
     }
+  }
+
+  @Override
+  protected List<ReactPackage> getPackages() {
+    return Arrays.<ReactPackage>asList(
+      new MainReactPackage(),
+      new PagerViewPackage()
+    );
   }
 }
