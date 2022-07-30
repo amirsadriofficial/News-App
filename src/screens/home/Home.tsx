@@ -1,43 +1,61 @@
+/* eslint-disable react-native/no-inline-styles */
 /**
  * @format
  */
 
-import * as React from 'react';
-import {View, useWindowDimensions} from 'react-native';
+import React, {useState} from 'react';
+import {View, StyleSheet, Dimensions, Text} from 'react-native';
 import {TabView, SceneMap} from 'react-native-tab-view';
 
-const FirstRoute = () => <View style={{flex: 1, backgroundColor: '#ff4081'}} />;
+const FirstRoute = () => (
+  <View style={[styles.scene, {backgroundColor: '#0000ff'}]} />
+);
 
 const SecondRoute = () => (
-  <View style={{flex: 1, backgroundColor: '#673ab7'}} />
+  <View style={[styles.scene, {backgroundColor: '#000'}]} />
 );
+
+const initialLayout = {width: Dimensions.get('window').width};
 
 const renderScene = SceneMap({
   first: FirstRoute,
   second: SecondRoute,
 });
 
-const Home = () => {
-  const layout = useWindowDimensions();
-
-  const [index, setIndex] = React.useState(0);
-  const [routes] = React.useState([
+export default function TabViewExample() {
+  const [index, setIndex] = useState(0);
+  const [routes] = useState([
     {key: 'first', title: 'First'},
     {key: 'second', title: 'Second'},
   ]);
 
   return (
-    <TabView
-      navigationState={{index, routes}}
-      renderScene={renderScene}
-      onIndexChange={setIndex}
-      initialLayout={{width: layout.width}}
-    />
+    <>
+      <View>
+        <Text>Hello world</Text>
+      </View>
+      <TabView
+        navigationState={{index, routes}}
+        renderScene={renderScene}
+        onIndexChange={setIndex}
+        initialLayout={initialLayout}
+        style={styles.container}
+      />
+      <View>
+        <Text>Finish</Text>
+      </View>
+    </>
   );
-};
+}
 
-export default Home;
-// import React from 'react';
+const styles = StyleSheet.create({
+  container: {
+    marginTop: 150,
+  },
+  scene: {
+    flex: 1,
+  },
+});
 // import {Text} from 'react-native';
 // import Header from './Header';
 // import Footer from '../../containers/footer/Footer';
