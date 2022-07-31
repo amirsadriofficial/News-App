@@ -4,7 +4,6 @@
 
 import React from 'react';
 import {StyleSheet, Text, View, StatusBar} from 'react-native';
-// import {NavigationContainer} from '@react-navigation/native';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
 import Layout from '../../containers/layout/Layout';
 import Header from './Header';
@@ -38,32 +37,17 @@ const Home = ({navigation}: any) => {
     <Layout navigation={navigation}>
       <Header />
       <Text>This is Home page</Text>
-      {/* <NavigationContainer> */}
         <Tab.Navigator>
           <Tab.Screen name="Chats" component={ChatScreen} />
           <Tab.Screen name="Status" component={StatutScreen} />
           <Tab.Screen name="Calls" component={CallScreen} />
         </Tab.Navigator>
         <StatusBar />
-      {/* </NavigationContainer> */}
     </Layout>
   );
 };
 
 export default Home;
-
-// const App = () => {
-//   return (
-// <NavigationContainer>
-//   <Tab.Navigator>
-//     <Tab.Screen name="Chats" component={ChatScreen} />
-//     <Tab.Screen name="Status" component={StatutScreen} />
-//     <Tab.Screen name="Calls" component={CallScreen} />
-//   </Tab.Navigator>
-//   <StatusBar />
-// </NavigationContainer>
-//   );
-// };
 
 const styles = StyleSheet.create({
   container: {
@@ -75,5 +59,3 @@ const styles = StyleSheet.create({
     fontSize: 20,
   },
 });
-
-// export default App;
