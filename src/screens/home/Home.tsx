@@ -38,9 +38,13 @@ const Home = ({navigation}: any) => {
       <Header />
       <Text>This is Home page</Text>
       <Tab.Navigator>
-        <Tab.Screen name="Chats" component={ChatScreen} />
-        <Tab.Screen name="Status" component={StatutScreen} />
-        <Tab.Screen name="Calls" component={CallScreen} />
+        <Tab.Screen name="Politics" component={ChatScreen} />
+        <Tab.Screen name="Sport" component={StatutScreen} />
+        <Tab.Screen name="Scientific" component={CallScreen} />
+        <Tab.Screen name="Technology" component={CallScreen} />
+        <Tab.Screen name="Economical" component={CallScreen} />
+        <Tab.Screen name="Social" component={CallScreen} />
+        <Tab.Screen name="Educational" component={CallScreen} />
       </Tab.Navigator>
       <StatusBar />
     </Layout>
