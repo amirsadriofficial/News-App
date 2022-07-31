@@ -171,17 +171,19 @@
 
 // export default App;
 import * as React from 'react';
-import {View, Text} from 'react-native';
+// import {View, Text} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import Home from './screens/home/Home';
+import Explore from './screens/explore/Explore';
 
-function HomeScreen() {
-  return (
-    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
-      <Text>Home Screen</Text>
-    </View>
-  );
-}
+// function HomeScreen() {
+//   return (
+//     <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+//       <Text>Home Screen</Text>
+//     </View>
+//   );
+// }
 
 const Stack = createNativeStackNavigator();
 
@@ -190,8 +192,13 @@ function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
-          name="About"
-          component={HomeScreen}
+          name="Home"
+          component={Home}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Explore"
+          component={Explore}
           options={{headerShown: false}}
         />
       </Stack.Navigator>
