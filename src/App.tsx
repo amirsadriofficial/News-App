@@ -2,17 +2,17 @@
  * @format
  */
 
-import React from 'react';
-import {StyleSheet, View} from 'react-native';
-import Home from './screens/home/Home';
+// import React from 'react';
+// import {StyleSheet, View} from 'react-native';
+// import Home from './screens/home/Home';
 
-const App = () => {
-  return (
-    <View style={styles.App}>
-      <Home />
-    </View>
-  );
-};
+// const App = () => {
+//   return (
+//     <View style={styles.App}>
+//       <Home />
+//     </View>
+//   );
+// };
 
 // import React, {type PropsWithChildren} from 'react';
 // import {
@@ -100,22 +100,73 @@ const App = () => {
 //   );
 // };
 
+// const styles = StyleSheet.create({
+//   App: {
+//     backgroundColor: '#eee',
+//   },
+// sectionTitle: {
+//   fontSize: 24,
+//   fontWeight: '600',
+// },
+// sectionDescription: {
+//   marginTop: 8,
+//   fontSize: 18,
+//   fontWeight: '400',
+// },
+// highlight: {
+//   fontWeight: '700',
+// },
+// });
+
+// export default App;
+import React from 'react';
+import {StyleSheet, Text, View, StatusBar} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
+
+const ChatScreen = () => {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.text}>ChatScreen</Text>
+    </View>
+  );
+};
+const StatutScreen = () => {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.text}>StatutScreen</Text>
+    </View>
+  );
+};
+const CallScreen = () => {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.text}>CallScreen</Text>
+    </View>
+  );
+};
+const Tab = createMaterialTopTabNavigator();
+const App = () => {
+  return (
+    <NavigationContainer>
+      <Tab.Navigator>
+        <Tab.Screen name="Chats" component={ChatScreen} />
+        <Tab.Screen name="Status" component={StatutScreen} />
+        <Tab.Screen name="Calls" component={CallScreen} />
+      </Tab.Navigator>
+      <StatusBar />
+    </NavigationContainer>
+  );
+};
 const styles = StyleSheet.create({
-  App: {
-    backgroundColor: '#eee',
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
-  // sectionTitle: {
-  //   fontSize: 24,
-  //   fontWeight: '600',
-  // },
-  // sectionDescription: {
-  //   marginTop: 8,
-  //   fontSize: 18,
-  //   fontWeight: '400',
-  // },
-  // highlight: {
-  //   fontWeight: '700',
-  // },
+  text: {
+    fontSize: 20,
+  },
 });
 
 export default App;
