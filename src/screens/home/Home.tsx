@@ -37,17 +37,15 @@ const Home = ({navigation}: any) => {
     <Layout navigation={navigation}>
       <Header />
       <Text>This is Home page</Text>
-        <Tab.Navigator>
-          <Tab.Screen name="Chats" component={ChatScreen} />
-          <Tab.Screen name="Status" component={StatutScreen} />
-          <Tab.Screen name="Calls" component={CallScreen} />
-        </Tab.Navigator>
-        <StatusBar />
+      <Tab.Navigator>
+        <Tab.Screen name="Chats" component={ChatScreen} />
+        <Tab.Screen name="Status" component={StatutScreen} />
+        <Tab.Screen name="Calls" component={CallScreen} />
+      </Tab.Navigator>
+      <StatusBar />
     </Layout>
   );
 };
-
-export default Home;
 
 const styles = StyleSheet.create({
   container: {
@@ -59,3 +57,5 @@ const styles = StyleSheet.create({
     fontSize: 20,
   },
 });
+
+export default Home;
