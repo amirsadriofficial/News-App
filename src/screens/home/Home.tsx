@@ -37,7 +37,11 @@ const Home = ({navigation}: any) => {
     <Layout navigation={navigation}>
       <Header />
       <Text>This is Home page</Text>
-      <Tab.Navigator>
+      <Tab.Navigator
+        screenOptions={{
+          tabBarScrollEnabled: true,
+          tabBarItemStyle: {width: 115},
+        }}>
         <Tab.Screen name="Politics" component={ChatScreen} />
         <Tab.Screen name="Sport" component={StatutScreen} />
         <Tab.Screen name="Scientific" component={CallScreen} />
