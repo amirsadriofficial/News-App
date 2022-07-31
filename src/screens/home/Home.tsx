@@ -6,6 +6,9 @@
 import React, {useState} from 'react';
 import {View, StyleSheet, Dimensions, Text} from 'react-native';
 import {TabView, SceneMap} from 'react-native-tab-view';
+// import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
+
+// const Tab = createMaterialTopTabNavigator();
 
 const FirstRoute = () => (
   <View style={[styles.scene, {backgroundColor: '#0000ff'}]} />
@@ -44,6 +47,12 @@ export default function TabViewExample() {
       <View>
         <Text>Finish</Text>
       </View>
+      {/* <View style={{flex: 1}}>
+        <Tab.Navigator>
+          <Tab.Screen name="ScreenOne" component={FirstRoute} />
+          <Tab.Screen name="ScreenTwo" component={SecondRoute} />
+        </Tab.Navigator>
+      </View> */}
     </>
   );
 }
