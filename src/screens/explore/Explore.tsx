@@ -1,13 +1,12 @@
 import React from 'react';
 import {Text} from 'react-native';
-import Footer from '../../containers/footer/Footer';
+import Layout from '../../containers/layout/Layout';
 
 const Explore = ({navigation}: any) => {
   return (
-    <>
+    <Layout navigation={navigation}>
       <Text>This is Explore page</Text>
-      <Footer navigation={navigation} />
-    </>
+    </Layout>
   );
 };
 
