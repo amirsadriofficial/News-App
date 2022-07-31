@@ -1,6 +1,6 @@
-// /**
-//  * @format
-//  */
+/**
+ * @format
+ */
 
 import React from 'react';
 import Footer from './../footer/Footer';
