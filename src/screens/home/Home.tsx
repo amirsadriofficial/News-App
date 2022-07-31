@@ -36,7 +36,6 @@ const Home = ({navigation}: any) => {
   return (
     <Layout navigation={navigation}>
       <Header />
-      <Text>This is Home page</Text>
       <Tab.Navigator
         screenOptions={{
           tabBarScrollEnabled: true,
