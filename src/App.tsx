@@ -119,54 +119,80 @@
 // });
 
 // export default App;
-import React from 'react';
-import {StyleSheet, Text, View, StatusBar} from 'react-native';
-import {NavigationContainer} from '@react-navigation/native';
-import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
+// import React from 'react';
+// import {StyleSheet, Text, View, StatusBar} from 'react-native';
+// import {NavigationContainer} from '@react-navigation/native';
+// import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
 
-const ChatScreen = () => {
+// const ChatScreen = () => {
+//   return (
+//     <View style={styles.container}>
+//       <Text style={styles.text}>ChatScreen</Text>
+//     </View>
+//   );
+// };
+// const StatutScreen = () => {
+//   return (
+//     <View style={styles.container}>
+//       <Text style={styles.text}>StatutScreen</Text>
+//     </View>
+//   );
+// };
+// const CallScreen = () => {
+//   return (
+//     <View style={styles.container}>
+//       <Text style={styles.text}>CallScreen</Text>
+//     </View>
+//   );
+// };
+// const Tab = createMaterialTopTabNavigator();
+// const App = () => {
+//   return (
+//     <NavigationContainer>
+//       <Tab.Navigator>
+//         <Tab.Screen name="Chats" component={ChatScreen} />
+//         <Tab.Screen name="Status" component={StatutScreen} />
+//         <Tab.Screen name="Calls" component={CallScreen} />
+//       </Tab.Navigator>
+//       <StatusBar />
+//     </NavigationContainer>
+//   );
+// };
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     justifyContent: 'center',
+//     alignItems: 'center',
+//   },
+//   text: {
+//     fontSize: 20,
+//   },
+// });
+
+// export default App;
+import * as React from 'react';
+import {View, Text} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+
+function HomeScreen() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.text}>ChatScreen</Text>
+    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+      <Text>Home Screen</Text>
     </View>
   );
-};
-const StatutScreen = () => {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.text}>StatutScreen</Text>
-    </View>
-  );
-};
-const CallScreen = () => {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.text}>CallScreen</Text>
-    </View>
-  );
-};
-const Tab = createMaterialTopTabNavigator();
-const App = () => {
+}
+
+const Stack = createNativeStackNavigator();
+
+function App() {
   return (
     <NavigationContainer>
-      <Tab.Navigator>
-        <Tab.Screen name="Chats" component={ChatScreen} />
-        <Tab.Screen name="Status" component={StatutScreen} />
-        <Tab.Screen name="Calls" component={CallScreen} />
-      </Tab.Navigator>
-      <StatusBar />
+      <Stack.Navigator>
+        <Stack.Screen name="About" component={HomeScreen} />
+      </Stack.Navigator>
     </NavigationContainer>
   );
-};
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  text: {
-    fontSize: 20,
-  },
-});
+}
 
 export default App;
