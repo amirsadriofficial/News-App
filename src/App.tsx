@@ -189,7 +189,11 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="About" component={HomeScreen} />
+        <Stack.Screen
+          name="About"
+          component={HomeScreen}
+          options={{headerShown: false}}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

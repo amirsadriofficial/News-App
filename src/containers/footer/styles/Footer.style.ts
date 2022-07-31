@@ -4,8 +4,8 @@ export default StyleSheet.create({
   footer: {
     display: 'flex',
     flexDirection: 'row',
-    position: 'relative',
-    bottom: -600,
+    position: 'absolute',
+    bottom: 0,
     backgroundColor: '#eee',
     paddingVertical: 10,
   },
