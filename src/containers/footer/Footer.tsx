@@ -29,12 +29,14 @@ const Footer = ({navigation}: any) => {
         <View style={styles.footerItems}>
           <FontAwesome name="bookmark-o" size={30} color="#000" />
           <Text>Saved</Text>
-      </View>
+        </View>
       </TouchableOpacity>
-      <View style={styles.footerItems}>
-        <AntDesign name="user" size={30} color="#000" />
-        <Text>Profile</Text>
-      </View>
+      <TouchableOpacity onPress={() => navigation.navigate('Profile')}>
+        <View style={styles.footerItems}>
+          <AntDesign name="user" size={30} color="#000" />
+          <Text>Profile</Text>
+        </View>
+      </TouchableOpacity>
     </SafeAreaView>
   );
 };
