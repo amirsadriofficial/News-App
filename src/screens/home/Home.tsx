@@ -7,6 +7,7 @@ import {StyleSheet, Text, View, StatusBar} from 'react-native';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
 import Layout from '../../containers/layout/Layout';
 import Header from './Header';
+import PopularCarousel from './PopularCarousel';
 
 const ChatScreen = () => {
   return (
@@ -41,10 +42,10 @@ const Home = ({navigation}: any) => {
           tabBarScrollEnabled: true,
           tabBarItemStyle: {width: 115},
         }}>
-        <Tab.Screen name="Politics" component={ChatScreen} />
+        <Tab.Screen name="Politics" component={PopularCarousel} />
         <Tab.Screen name="Sport" component={StatutScreen} />
         <Tab.Screen name="Scientific" component={CallScreen} />
-        <Tab.Screen name="Technology" component={CallScreen} />
+        <Tab.Screen name="Technology" component={ChatScreen} />
         <Tab.Screen name="Economical" component={CallScreen} />
         <Tab.Screen name="Social" component={CallScreen} />
         <Tab.Screen name="Educational" component={CallScreen} />
