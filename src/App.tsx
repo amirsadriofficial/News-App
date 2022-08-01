@@ -7,6 +7,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator, TransitionPresets} from '@react-navigation/stack';
 import Home from './screens/home/Home';
 import Explore from './screens/explore/Explore';
+import Saved from './screens/saved/Saved';
 
 const Stack = createStackNavigator();
 
@@ -32,7 +33,7 @@ const App = () => {
         />
         <Stack.Screen
           name="Saved"
-          component={Explore}
+          component={Saved}
           options={{
             headerShown: false,
             ...TransitionPresets.SlideFromRightIOS,
