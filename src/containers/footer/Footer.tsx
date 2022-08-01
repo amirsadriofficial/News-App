@@ -25,11 +25,12 @@ const Footer = ({navigation}: any) => {
           <Text>Explore</Text>
         </View>
       </TouchableOpacity>
-
-      <View style={styles.footerItems}>
-        <FontAwesome name="bookmark-o" size={30} color="#000" />
-        <Text>Saved</Text>
+      <TouchableOpacity onPress={() => navigation.navigate('Saved')}>
+        <View style={styles.footerItems}>
+          <FontAwesome name="bookmark-o" size={30} color="#000" />
+          <Text>Saved</Text>
       </View>
+      </TouchableOpacity>
       <View style={styles.footerItems}>
         <AntDesign name="user" size={30} color="#000" />
         <Text>Profile</Text>
