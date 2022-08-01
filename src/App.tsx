@@ -47,6 +47,14 @@ const App = () => {
             ...TransitionPresets.SlideFromRightIOS,
           }}
         />
+        <Stack.Screen
+          name="Profile"
+          component={Explore}
+          options={{
+            headerShown: false,
+            ...TransitionPresets.SlideFromRightIOS,
+          }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
