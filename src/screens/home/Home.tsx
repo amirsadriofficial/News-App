@@ -19,21 +19,21 @@ const PopularPoliticsSlider = () => {
 const PopularSportSlider = () => {
   return <PopularPostsSlider data={PopularSportsData} />;
 };
-// const PopularPoliticsSlider = () => {
-//   return <PopularPostsSlider data={PopularPoliticsData} />;
-// };
-// const PopularPoliticsSlider = () => {
-//   return <PopularPostsSlider data={PopularPoliticsData} />;
-// };
-// const PopularPoliticsSlider = () => {
-//   return <PopularPostsSlider data={PopularPoliticsData} />;
-// };
-// const PopularPoliticsSlider = () => {
-//   return <PopularPostsSlider data={PopularPoliticsData} />;
-// };
-// const PopularPoliticsSlider = () => {
-//   return <PopularPostsSlider data={PopularPoliticsData} />;
-// };
+const PopularScientificSlider = () => {
+  return <PopularPostsSlider data={PopularPoliticsData} />;
+};
+const PopularTechnologySlider = () => {
+  return <PopularPostsSlider data={PopularPoliticsData} />;
+};
+const PopularEconomicalSlider = () => {
+  return <PopularPostsSlider data={PopularPoliticsData} />;
+};
+const PopularSocialSlider = () => {
+  return <PopularPostsSlider data={PopularPoliticsData} />;
+};
+const PopularEducationalSlider = () => {
+  return <PopularPostsSlider data={PopularPoliticsData} />;
+};
 
 const Tab = createMaterialTopTabNavigator();
 
@@ -48,11 +48,11 @@ const Home = ({navigation}: any) => {
         }}>
         <Tab.Screen name="Politics" component={PopularPoliticsSlider} />
         <Tab.Screen name="Sport" component={PopularSportSlider} />
-        <Tab.Screen name="Scientific" component={PopularPoliticsSlider} />
-        <Tab.Screen name="Technology" component={PopularPoliticsSlider} />
-        <Tab.Screen name="Economical" component={PopularPoliticsSlider} />
-        <Tab.Screen name="Social" component={PopularPoliticsSlider} />
-        <Tab.Screen name="Educational" component={PopularPoliticsSlider} />
+        <Tab.Screen name="Scientific" component={PopularScientificSlider} />
+        <Tab.Screen name="Technology" component={PopularTechnologySlider} />
+        <Tab.Screen name="Economical" component={PopularEconomicalSlider} />
+        <Tab.Screen name="Social" component={PopularSocialSlider} />
+        <Tab.Screen name="Educational" component={PopularEducationalSlider} />
       </Tab.Navigator>
     </Layout>
   );
