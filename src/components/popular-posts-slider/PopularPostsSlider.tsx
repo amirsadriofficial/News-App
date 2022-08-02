@@ -7,22 +7,21 @@ import {
   SafeAreaView,
   View,
   FlatList,
-  StyleSheet,
   Text,
-  StatusBar,
   ListRenderItem,
   Image,
   ImageSourcePropType,
 } from 'react-native';
+import styles from './styles/PopularPostsSlider.style';
 
-export interface IUser {
+export interface SlideItems {
   id: string;
   image: ImageSourcePropType;
   title: string;
   date: string;
 }
 
-const Item = ({item}: {item: IUser}) => (
+const Item = ({item}: {item: SlideItems}) => (
   <View style={styles.item}>
     <Image source={item.image} style={styles.image} />
     <Text style={styles.title}>{item.title}</Text>
@@ -31,7 +30,9 @@ const Item = ({item}: {item: IUser}) => (
 );
 
 const PopularPostsSlider = ({data}: any) => {
-  const renderItem: ListRenderItem<IUser> = ({item}) => <Item item={item} />;
+  const renderItem: ListRenderItem<SlideItems> = ({item}) => (
+    <Item item={item} />
+  );
 
   return (
     <>
@@ -49,24 +50,5 @@ const PopularPostsSlider = ({data}: any) => {
     </>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    marginTop: StatusBar.currentHeight || 0,
-  },
-  item: {
-    backgroundColor: '#f9c2ff',
-    padding: 20,
-    marginVertical: 8,
-    marginHorizontal: 16,
-  },
-  title: {
-    fontSize: 32,
-  },
-  image: {
-    height: 50,
-    width: 50,
-  },
-});
 
 export default PopularPostsSlider;
