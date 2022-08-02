@@ -7,7 +7,7 @@ import {StyleSheet, Text, View, StatusBar} from 'react-native';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
 import Layout from '../../containers/layout/Layout';
 import Header from './Header';
-import PopularCarousel from './PopularCarousel';
+import PopularCarousel from '../../components/popular-posts-slider/PopularPostsSlider';
 
 const ChatScreen = () => {
   return (
