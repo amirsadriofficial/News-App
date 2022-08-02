@@ -54,7 +54,6 @@ const Home = ({navigation}: any) => {
         <Tab.Screen name="Social" component={PopularPoliticsSlider} />
         <Tab.Screen name="Educational" component={PopularPoliticsSlider} />
       </Tab.Navigator>
-      {/* <StatusBar /> */}
     </Layout>
   );
 };
