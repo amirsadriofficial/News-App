@@ -11,10 +11,16 @@ import {
   Text,
   StatusBar,
   ListRenderItem,
+  Image,
+  ImageSourcePropType
 } from 'react-native';
+import Picture1 from './../../assets/posts/1.png';
+import Picture2 from './../../assets/posts/2.png';
 
 export interface IUser {
   id: string;
+  image: ImageSourcePropType;
+  // image: string;
   title: string;
   date: string;
 }
@@ -22,6 +28,15 @@ export interface IUser {
 const DATA = [
   {
     id: '1',
+    image: Picture1,
+    // image: './../../assets/posts/1.png',
+    title: 'First Item',
+    date: '24 june 2022',
+  },
+  {
+    id: '1',
+    image: Picture2,
+    // image: './../../assets/posts/1.png',
     title: 'First Item',
     date: '24 june 2022',
   },
@@ -29,6 +44,8 @@ const DATA = [
 
 const Item = ({item}: {item: IUser}) => (
   <View style={styles.item}>
+    {/* <Image source={require(item.image)} /> */}
+    <Image source={item.image} style={styles.image} />
     <Text style={styles.title}>{item.title}</Text>
     <Text style={styles.title}>{item.date}</Text>
   </View>
@@ -67,6 +84,10 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 32,
   },
+  image:{
+    height: 50, 
+    width: 50,
+  }
 });
 
 export default PopularCarousel;
