@@ -1,3 +1,7 @@
+/**
+ * @format
+ */
+
 import React from 'react';
 import {Text} from 'react-native';
 import Layout from '../../containers/layout/Layout';
