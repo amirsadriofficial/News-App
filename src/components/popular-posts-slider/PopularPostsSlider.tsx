@@ -45,6 +45,7 @@ const PopularPostsSlider = ({data}: any) => {
           renderItem={renderItem}
           keyExtractor={item => item.id}
           horizontal
+          showsHorizontalScrollIndicator={false}
         />
       </SafeAreaView>
     </>
