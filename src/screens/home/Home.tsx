@@ -7,15 +7,18 @@ import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs
 import Layout from '../../containers/layout/Layout';
 import Header from './Header';
 import PopularPostsSlider from '../../components/popular-posts-slider/PopularPostsSlider';
-import {PopularPoliticsData} from '../../utils/home-posts/PopularPostsData';
+import {
+  PopularPoliticsData,
+  PopularSportsData,
+} from '../../utils/home-posts/PopularPostsData';
 // import styles from './styles/Home.style';
 
 const PopularPoliticsSlider = () => {
   return <PopularPostsSlider data={PopularPoliticsData} />;
 };
-// const PopularPoliticsSlider = () => {
-//   return <PopularPostsSlider data={PopularPoliticsData} />;
-// };
+const PopularSportSlider = () => {
+  return <PopularPostsSlider data={PopularSportsData} />;
+};
 // const PopularPoliticsSlider = () => {
 //   return <PopularPostsSlider data={PopularPoliticsData} />;
 // };
@@ -44,7 +47,7 @@ const Home = ({navigation}: any) => {
           tabBarItemStyle: {width: 115},
         }}>
         <Tab.Screen name="Politics" component={PopularPoliticsSlider} />
-        <Tab.Screen name="Sport" component={PopularPoliticsSlider} />
+        <Tab.Screen name="Sport" component={PopularSportSlider} />
         <Tab.Screen name="Scientific" component={PopularPoliticsSlider} />
         <Tab.Screen name="Technology" component={PopularPoliticsSlider} />
         <Tab.Screen name="Economical" component={PopularPoliticsSlider} />
