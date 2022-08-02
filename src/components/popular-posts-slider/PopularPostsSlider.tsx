@@ -14,8 +14,6 @@ import {
   Image,
   ImageSourcePropType,
 } from 'react-native';
-import Picture1 from './../../assets/posts/1.png';
-import Picture2 from './../../assets/posts/2.png';
 
 export interface IUser {
   id: string;
@@ -23,21 +21,6 @@ export interface IUser {
   title: string;
   date: string;
 }
-
-const DATA = [
-  {
-    id: '1',
-    image: Picture1,
-    title: 'First Item',
-    date: '24 june 2022',
-  },
-  {
-    id: '2',
-    image: Picture2,
-    title: 'two Item',
-    date: '24 augous 1953',
-  },
-];
 
 const Item = ({item}: {item: IUser}) => (
   <View style={styles.item}>
@@ -47,7 +30,7 @@ const Item = ({item}: {item: IUser}) => (
   </View>
 );
 
-const PopularCarousel = () => {
+const PopularPostsSlider = ({data}: any) => {
   const renderItem: ListRenderItem<IUser> = ({item}) => <Item item={item} />;
 
   return (
@@ -57,7 +40,7 @@ const PopularCarousel = () => {
       </View>
       <SafeAreaView style={styles.container}>
         <FlatList
-          data={DATA}
+          data={data}
           renderItem={renderItem}
           keyExtractor={item => item.id}
           horizontal
@@ -86,4 +69,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default PopularCarousel;
+export default PopularPostsSlider;
