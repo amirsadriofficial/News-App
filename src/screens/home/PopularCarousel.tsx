@@ -16,33 +16,26 @@ import {
 export interface IUser {
   id: string;
   title: string;
+  date: string;
 }
 
 const DATA = [
   {
-    id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28ba',
+    id: '1',
     title: 'First Item',
-  },
-  {
-    id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f63',
-    title: 'Second Item',
-  },
-  {
-    id: '58694a0f-3da1-471f-bd96-145571e29d72',
-    title: 'Third Item',
+    date: '24 june 2022',
   },
 ];
 
-const Item = ({title}: {title: IUser}) => (
+const Item = ({item}: {item: IUser}) => (
   <View style={styles.item}>
-    <Text style={styles.title}>{title}</Text>
+    <Text style={styles.title}>{item.title}</Text>
+    <Text style={styles.title}>{item.date}</Text>
   </View>
 );
 
 const PopularCarousel = () => {
-  const renderItem: ListRenderItem<IUser> = ({item}) => (
-    <Item title={item.title} />
-  );
+  const renderItem: ListRenderItem<IUser> = ({item}) => <Item item={item} />;
 
   return (
     <>
