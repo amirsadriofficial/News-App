@@ -10,6 +10,11 @@ import PopularPostsSlider from '../../components/popular-posts-slider/PopularPos
 import {
   PopularPoliticsData,
   PopularSportsData,
+  PopularScientificData,
+  PopularTechnologyData,
+  PopularEconomicalData,
+  PopularSocialData,
+  PopularEducationalData
 } from '../../utils/home-posts/PopularPostsData';
 // import styles from './styles/Home.style';
 
@@ -20,19 +25,19 @@ const PopularSportSlider = () => {
   return <PopularPostsSlider data={PopularSportsData} />;
 };
 const PopularScientificSlider = () => {
-  return <PopularPostsSlider data={PopularPoliticsData} />;
+  return <PopularPostsSlider data={PopularScientificData} />;
 };
 const PopularTechnologySlider = () => {
-  return <PopularPostsSlider data={PopularPoliticsData} />;
+  return <PopularPostsSlider data={PopularTechnologyData} />;
 };
 const PopularEconomicalSlider = () => {
-  return <PopularPostsSlider data={PopularPoliticsData} />;
+  return <PopularPostsSlider data={PopularEconomicalData} />;
 };
 const PopularSocialSlider = () => {
-  return <PopularPostsSlider data={PopularPoliticsData} />;
+  return <PopularPostsSlider data={PopularSocialData} />;
 };
 const PopularEducationalSlider = () => {
-  return <PopularPostsSlider data={PopularPoliticsData} />;
+  return <PopularPostsSlider data={PopularEducationalData} />;
 };
 
 const Tab = createMaterialTopTabNavigator();
