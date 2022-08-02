@@ -14,7 +14,7 @@ import {
   PopularTechnologyData,
   PopularEconomicalData,
   PopularSocialData,
-  PopularEducationalData
+  PopularEducationalData,
 } from '../../utils/home-posts/PopularPostsData';
 // import styles from './styles/Home.style';
 
