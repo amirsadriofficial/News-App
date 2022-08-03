@@ -40,7 +40,7 @@ const PopularPostsSlider = ({data}: any) => {
 
   return (
     <SafeAreaView style={styles.container}>
-      <View>
+      <View style={styles.header}>
         <Text style={styles.headerTitle}>Popular Posts</Text>
         <Text style={styles.headerButton}>Show All</Text>
       </View>

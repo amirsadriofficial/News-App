@@ -6,19 +6,22 @@ const styles = StyleSheet.create({
     marginLeft: 16,
   },
   header: {
-    fontSize: 24,
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    // fontSize: 24,
     marginBottom: 8,
-    paddingLeft: 4,
+    // paddingLeft: 4,
   },
   headerTitle: {
     fontSize: 24,
-    marginBottom: 8,
+    // marginBottom: 8,
     paddingLeft: 4,
   },
   headerButton: {
-    fontSize: 24,
-    marginBottom: 8,
-    paddingLeft: 4,
+    fontSize: 14,
+    marginRight: 16,
   },
   item: {
     backgroundColor: '#ffffff',
