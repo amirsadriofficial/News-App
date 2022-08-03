@@ -10,14 +10,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    // fontSize: 24,
     marginBottom: 8,
-    // paddingLeft: 4,
   },
   headerTitle: {
     fontSize: 24,
-    // marginBottom: 8,
-    paddingLeft: 4,
+    marginLeft: 4,
   },
   headerButton: {
     fontSize: 14,
