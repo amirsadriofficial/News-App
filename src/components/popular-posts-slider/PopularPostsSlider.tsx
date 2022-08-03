@@ -8,6 +8,7 @@ import {
   View,
   FlatList,
   Text,
+  TouchableOpacity,
   ListRenderItem,
   Image,
   ImageSourcePropType,
@@ -42,7 +43,9 @@ const PopularPostsSlider = ({data}: any) => {
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
         <Text style={styles.headerTitle}>Popular Posts</Text>
-        <Text style={styles.headerButton}>Show All</Text>
+        <TouchableOpacity>
+          <Text style={styles.headerButton}>Show All</Text>
+        </TouchableOpacity>
       </View>
       <FlatList
         data={data}
