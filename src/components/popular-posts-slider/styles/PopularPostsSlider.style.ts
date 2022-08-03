@@ -5,6 +5,11 @@ const styles = StyleSheet.create({
     marginTop: 16,
     marginLeft: 16,
   },
+  header: {
+    fontSize: 24,
+    marginBottom: 8,
+    paddingLeft: 4,
+  },
   item: {
     backgroundColor: '#ffffff',
     padding: 8,
