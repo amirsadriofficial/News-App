@@ -15,6 +15,12 @@ const styles = StyleSheet.create({
     height: 200,
     width: 300,
   },
+  slideFooter: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
   title: {
     fontSize: 20,
     width: 300,

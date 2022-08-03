@@ -28,7 +28,7 @@ const Item = ({item}: {item: SlideItems}) => (
     <Text style={styles.title}>{item.title}</Text>
     <View style={styles.slideFooter}>
       <Text style={styles.date}>{item.date}</Text>
-      <FontAwesome name="bookmark-o" size={30} color="#000" />
+      <FontAwesome name="bookmark-o" size={25} color="#000" />
     </View>
   </View>
 );
