@@ -7,6 +7,7 @@ import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs
 import Layout from '../../containers/layout/Layout';
 import Header from './Header';
 import PopularPostsSlider from '../../components/popular-posts-slider/PopularPostsSlider';
+import NewPostsSlider from '../../components/new-posts-slider/NewPostsSlider';
 import {
   PopularPoliticsData,
   PopularSportsData,
@@ -19,7 +20,12 @@ import {
 // import styles from './styles/Home.style';
 
 const PopularPoliticsSlider = () => {
-  return <PopularPostsSlider data={PopularPoliticsData} />;
+  return (
+    <>
+      <PopularPostsSlider data={PopularPoliticsData} />
+      <NewPostsSlider data={PopularPoliticsData} />
+    </>
+  );
 };
 const PopularSportSlider = () => {
   return <PopularPostsSlider data={PopularSportsData} />;
