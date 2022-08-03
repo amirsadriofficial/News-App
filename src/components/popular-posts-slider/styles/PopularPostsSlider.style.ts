@@ -8,13 +8,18 @@ const styles = StyleSheet.create({
     backgroundColor: '#ffffff',
     padding: 8,
     marginVertical: 4,
-    marginHorizontal: 8,
+    marginHorizontal: 4,
+    marginLeft: 16,
   },
   image: {
     height: 200,
     width: 300,
   },
   title: {
+    fontSize: 24,
+    width: 300,
+  },
+  date: {
     fontSize: 24,
     width: 300,
   },
