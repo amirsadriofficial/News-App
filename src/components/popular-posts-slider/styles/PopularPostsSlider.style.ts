@@ -10,11 +10,22 @@ const styles = StyleSheet.create({
     marginBottom: 8,
     paddingLeft: 4,
   },
+  headerTitle: {
+    fontSize: 24,
+    marginBottom: 8,
+    paddingLeft: 4,
+  },
+  headerButton: {
+    fontSize: 24,
+    marginBottom: 8,
+    paddingLeft: 4,
+  },
   item: {
     backgroundColor: '#ffffff',
     padding: 8,
     marginVertical: 4,
     marginHorizontal: 4,
+    borderRadius: 8,
   },
   image: {
     height: 200,
