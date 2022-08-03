@@ -13,7 +13,6 @@ import {
   Image,
   ImageSourcePropType,
 } from 'react-native';
-import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import styles from './styles/NewPostsSlider.style';
 
 export interface SlideItems {
@@ -26,10 +25,9 @@ export interface SlideItems {
 const Item = ({item}: {item: SlideItems}) => (
   <View style={styles.item}>
     <Image source={item.image} style={styles.image} />
-    <Text style={styles.title}>{item.title}</Text>
-    <View style={styles.footer}>
+    <View style={styles.description}>
+      <Text style={styles.title}>{item.title}</Text>
       <Text style={styles.date}>{item.date}</Text>
-      <FontAwesome name="bookmark-o" size={25} color="#000" />
     </View>
   </View>
 );

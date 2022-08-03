@@ -21,6 +21,10 @@ const styles = StyleSheet.create({
     marginRight: 16,
   },
   item: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    alignItems: 'flex-start',
     backgroundColor: '#ffffff',
     padding: 8,
     marginVertical: 4,
@@ -28,23 +32,19 @@ const styles = StyleSheet.create({
     borderRadius: 8,
   },
   image: {
-    height: 200,
-    width: 300,
+    height: 100,
+    width: 100,
   },
-  footer: {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
+  description: {
+    marginLeft: 8,
   },
   title: {
-    fontSize: 20,
-    width: 300,
-    marginVertical: 8,
+    width: 185,
+    fontSize: 18,
+    marginBottom: 8,
   },
   date: {
     fontSize: 12,
-    width: 150,
   },
 });
 

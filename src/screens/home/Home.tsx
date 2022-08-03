@@ -23,27 +23,57 @@ const PopularPoliticsSlider = () => {
   return (
     <>
       <PopularPostsSlider data={PopularPoliticsData} />
-      <NewPostsSlider data={PopularPoliticsData} />
+      <NewPostsSlider data={PopularSportsData} />
     </>
   );
 };
 const PopularSportSlider = () => {
-  return <PopularPostsSlider data={PopularSportsData} />;
+  return (
+    <>
+      <PopularPostsSlider data={PopularPoliticsData} />
+      <NewPostsSlider data={PopularSportsData} />
+    </>
+  );
 };
 const PopularScientificSlider = () => {
-  return <PopularPostsSlider data={PopularScientificData} />;
+  return (
+    <>
+      <PopularPostsSlider data={PopularPoliticsData} />
+      <NewPostsSlider data={PopularScientificData} />
+    </>
+  );
 };
 const PopularTechnologySlider = () => {
-  return <PopularPostsSlider data={PopularTechnologyData} />;
+  return (
+    <>
+      <PopularPostsSlider data={PopularPoliticsData} />
+      <NewPostsSlider data={PopularTechnologyData} />
+    </>
+  );
 };
 const PopularEconomicalSlider = () => {
-  return <PopularPostsSlider data={PopularEconomicalData} />;
+  return (
+    <>
+      <PopularPostsSlider data={PopularPoliticsData} />
+      <NewPostsSlider data={PopularEconomicalData} />
+    </>
+  );
 };
 const PopularSocialSlider = () => {
-  return <PopularPostsSlider data={PopularSocialData} />;
+  return (
+    <>
+      <PopularPostsSlider data={PopularPoliticsData} />
+      <NewPostsSlider data={PopularSocialData} />
+    </>
+  );
 };
 const PopularEducationalSlider = () => {
-  return <PopularPostsSlider data={PopularEducationalData} />;
+  return (
+    <>
+      <PopularPostsSlider data={PopularPoliticsData} />
+      <NewPostsSlider data={PopularEducationalData} />
+    </>
+  );
 };
 
 const Tab = createMaterialTopTabNavigator();
