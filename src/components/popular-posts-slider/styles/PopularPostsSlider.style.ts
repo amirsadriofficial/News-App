@@ -6,16 +6,17 @@ const styles = StyleSheet.create({
   },
   item: {
     backgroundColor: '#ffffff',
-    padding: 20,
-    marginVertical: 8,
-    marginHorizontal: 16,
+    padding: 8,
+    marginVertical: 4,
+    marginHorizontal: 8,
   },
   image: {
     height: 200,
     width: 300,
   },
   title: {
-    fontSize: 32,
+    fontSize: 24,
+    width: 300,
   },
 });
 
