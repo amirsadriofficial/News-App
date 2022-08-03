@@ -16,12 +16,13 @@ const styles = StyleSheet.create({
     width: 300,
   },
   title: {
-    fontSize: 24,
+    fontSize: 20,
     width: 300,
+    marginVertical: 8,
   },
   date: {
-    fontSize: 24,
-    width: 300,
+    fontSize: 12,
+    width: 150,
   },
 });
 

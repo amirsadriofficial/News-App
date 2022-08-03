@@ -25,7 +25,7 @@ const Item = ({item}: {item: SlideItems}) => (
   <View style={styles.item}>
     <Image source={item.image} style={styles.image} />
     <Text style={styles.title}>{item.title}</Text>
-    <Text style={styles.title}>{item.date}</Text>
+    <Text style={styles.date}>{item.date}</Text>
   </View>
 );
 
