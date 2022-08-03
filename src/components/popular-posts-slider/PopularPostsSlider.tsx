@@ -24,14 +24,16 @@ export interface SlideItems {
 }
 
 const Item = ({item}: {item: SlideItems}) => (
-  <View style={styles.item}>
-    <Image source={item.image} style={styles.image} />
-    <Text style={styles.title}>{item.title}</Text>
-    <View style={styles.footer}>
-      <Text style={styles.date}>{item.date}</Text>
-      <FontAwesome name="bookmark-o" size={25} color="#000" />
+  <TouchableOpacity>
+    <View style={styles.item}>
+      <Image source={item.image} style={styles.image} />
+      <Text style={styles.title}>{item.title}</Text>
+      <View style={styles.footer}>
+        <Text style={styles.date}>{item.date}</Text>
+        <FontAwesome name="bookmark-o" size={25} color="#000" />
+      </View>
     </View>
-  </View>
+  </TouchableOpacity>
 );
 
 const PopularPostsSlider = ({data}: any) => {

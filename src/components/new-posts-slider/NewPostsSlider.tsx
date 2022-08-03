@@ -23,13 +23,15 @@ export interface SlideItems {
 }
 
 const Item = ({item}: {item: SlideItems}) => (
-  <View style={styles.item}>
-    <Image source={item.image} style={styles.image} />
-    <View style={styles.description}>
-      <Text style={styles.title}>{item.title}</Text>
-      <Text style={styles.date}>{item.date}</Text>
+  <TouchableOpacity>
+    <View style={styles.item}>
+      <Image source={item.image} style={styles.image} />
+      <View style={styles.description}>
+        <Text style={styles.title}>{item.title}</Text>
+        <Text style={styles.date}>{item.date}</Text>
+      </View>
     </View>
-  </View>
+  </TouchableOpacity>
 );
 
 const NewPostsSlider = ({data}: any) => {
