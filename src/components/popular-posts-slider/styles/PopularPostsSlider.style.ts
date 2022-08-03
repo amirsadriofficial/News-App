@@ -1,8 +1,8 @@
-import {StyleSheet, StatusBar} from 'react-native';
+import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: StatusBar.currentHeight || 0,
+    marginTop: 16,
   },
   item: {
     backgroundColor: '#ffffff',
@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     height: 200,
     width: 300,
   },
-  slideFooter: {
+  footer: {
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
