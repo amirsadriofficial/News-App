@@ -3,13 +3,13 @@ import {StyleSheet} from 'react-native';
 const styles = StyleSheet.create({
   container: {
     marginTop: 16,
+    marginLeft: 16,
   },
   item: {
     backgroundColor: '#ffffff',
     padding: 8,
     marginVertical: 4,
     marginHorizontal: 4,
-    marginLeft: 16,
   },
   image: {
     height: 200,
