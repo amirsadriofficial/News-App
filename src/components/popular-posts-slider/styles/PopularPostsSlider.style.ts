@@ -5,17 +5,17 @@ const styles = StyleSheet.create({
     marginTop: StatusBar.currentHeight || 0,
   },
   item: {
-    backgroundColor: '#f9c2ff',
+    backgroundColor: '#ffffff',
     padding: 20,
     marginVertical: 8,
     marginHorizontal: 16,
   },
+  image: {
+    height: 200,
+    width: 300,
+  },
   title: {
     fontSize: 32,
-  },
-  image: {
-    height: 50,
-    width: 50,
   },
 });
 
