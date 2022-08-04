@@ -25,9 +25,7 @@ const Explore = ({navigation}: any) => {
             keyboardType="default"
           />
         </View>
-        <View>
-          <ExploreCategory />
-        </View>
+        <ExploreCategory />
       </SafeAreaView>
     </Layout>
   );
