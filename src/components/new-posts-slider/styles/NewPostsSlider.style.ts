@@ -2,7 +2,7 @@ import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 16,
+    marginTop: 24,
     marginLeft: 16,
   },
   header: {
@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: 8,
+    marginBottom: 4,
   },
   headerTitle: {
     fontSize: 24,
@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
   },
   headerButton: {
     fontSize: 14,
-    marginRight: 16,
+    marginRight: 14,
   },
   item: {
     display: 'flex',
