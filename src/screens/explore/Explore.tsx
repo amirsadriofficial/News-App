@@ -7,6 +7,7 @@ import {SafeAreaView, TextInput, View} from 'react-native';
 import Feather from 'react-native-vector-icons/Feather';
 import Layout from '../../containers/layout/Layout';
 import styles from './styles/Explore.style';
+import ExploreCategory from '../../components/explore-category/ExploreCategory';
 
 const Explore = ({navigation}: any) => {
   const [number, onChangeNumber] = React.useState('');
@@ -23,6 +24,9 @@ const Explore = ({navigation}: any) => {
             placeholder="Search..."
             keyboardType="default"
           />
+        </View>
+        <View>
+          <ExploreCategory />
         </View>
       </SafeAreaView>
     </Layout>
