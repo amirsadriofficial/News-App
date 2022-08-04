@@ -14,6 +14,6 @@ export default StyleSheet.create({
   input: {
     marginLeft: 8,
     height: '100%',
-    width: '100%',
+    width: '90%',
   },
 });

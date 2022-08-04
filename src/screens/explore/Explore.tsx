@@ -3,7 +3,7 @@
  */
 
 import React from 'react';
-import {SafeAreaView, TextInput, View} from 'react-native';
+import {SafeAreaView, TextInput, View, TouchableOpacity} from 'react-native';
 import Feather from 'react-native-vector-icons/Feather';
 import Layout from '../../containers/layout/Layout';
 import styles from './styles/Explore.style';
@@ -16,7 +16,9 @@ const Explore = ({navigation}: any) => {
     <Layout navigation={navigation}>
       <SafeAreaView>
         <View style={styles.inputContainer}>
-          <Feather name="search" size={25} color="#000" />
+          <TouchableOpacity>
+            <Feather name="search" size={25} color="#000" />
+          </TouchableOpacity>
           <TextInput
             style={styles.input}
             onChangeText={onChangeNumber}
