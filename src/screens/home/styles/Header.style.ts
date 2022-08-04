@@ -23,10 +23,11 @@ export default StyleSheet.create({
   },
   headerName: {
     fontSize: 20,
-    color: '#000'
+    fontWeight: '500',
+    color: '#000',
   },
   headerUsername: {
-    marginVertical: 4
+    marginVertical: 4,
   },
   headerNotification: {
     borderWidth: 2,
@@ -35,6 +36,6 @@ export default StyleSheet.create({
     borderRadius: 50,
     padding: 7,
     backgroundColor: '#fff',
-    marginRight:4,
+    marginRight: 4,
   },
 });
