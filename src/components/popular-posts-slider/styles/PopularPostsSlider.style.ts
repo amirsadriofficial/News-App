@@ -15,6 +15,7 @@ const styles = StyleSheet.create({
   headerTitle: {
     fontSize: 24,
     marginLeft: 4,
+    color: '#282828',
   },
   headerButton: {
     fontSize: 14,
@@ -41,10 +42,18 @@ const styles = StyleSheet.create({
     fontSize: 20,
     width: 300,
     marginVertical: 8,
+    color: '#282828',
+  },
+  dateSection: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   date: {
     fontSize: 12,
     width: 150,
+    marginLeft: 4,
   },
 });
 

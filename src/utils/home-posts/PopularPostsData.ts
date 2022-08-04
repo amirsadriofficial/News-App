@@ -22,13 +22,13 @@ export const PopularSportsData = [
   {
     id: '1',
     image: PoliticsPost3,
-    title: 'Firddhst Item',
+    title: 'Tracking the States Where Abortion Is Now Banned',
     date: '24 fbd 2022',
   },
   {
     id: '2',
     image: PoliticsPost4,
-    title: 'twdnhbdsnhbo Item',
+    title: 'Tracking the States Where Abortion Is Now Banned',
     date: '24 dbd 1953',
   },
 ];

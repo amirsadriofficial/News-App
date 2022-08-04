@@ -13,6 +13,7 @@ import {
   Image,
   ImageSourcePropType,
 } from 'react-native';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import styles from './styles/NewPostsSlider.style';
 
 export interface SlideItems {
@@ -28,7 +29,10 @@ const Item = ({item}: {item: SlideItems}) => (
       <Image source={item.image} style={styles.image} />
       <View style={styles.description}>
         <Text style={styles.title}>{item.title}</Text>
-        <Text style={styles.date}>{item.date}</Text>
+        <View style={styles.footer}>
+          <MaterialIcons name="update" size={20} color="#999" />
+          <Text style={styles.date}>{item.date}</Text>
+        </View>
       </View>
     </View>
   </TouchableOpacity>
