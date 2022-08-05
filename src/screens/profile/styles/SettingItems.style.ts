@@ -5,6 +5,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     borderRadius: 40,
     marginTop: 16,
+    marginLeft: 18,
+    width: 350,
   },
   item: {
     display: 'flex',
