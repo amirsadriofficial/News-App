@@ -18,9 +18,21 @@ const styles = StyleSheet.create({
   shareIcon: {
     marginRight: 24,
   },
+  container: {
+    marginLeft: 16,
+  },
   image: {
     height: 300,
-    width: 300,
+    width: 350,
+    borderRadius: 32,
+  },
+  title: {
+    fontSize: 30,
+    color: '#282828',
+  },
+  description: {
+    fontSize: 30,
+    color: '#282828',
   },
 });
 

@@ -3,7 +3,7 @@
  */
 
 import React from 'react';
-import {Text, View, Image} from 'react-native';
+import {Text, View, Image, TouchableOpacity, SafeAreaView} from 'react-native';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import Octicons from 'react-native-vector-icons/Octicons';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
@@ -14,22 +14,35 @@ const SinglePost = ({route, navigation}: any) => {
   const {id} = route.params;
   const post = SavedPostData.filter(obj => obj.id === id);
   return (
-    <View>
+    <SafeAreaView>
       <View style={styles.header}>
-        <AntDesign name="arrowleft" size={30} color="#1DA1F2" />
+        <TouchableOpacity onPress={() => navigation.goBack()}>
+          <AntDesign name="arrowleft" size={30} color="#1DA1F2" />
+        </TouchableOpacity>
         <View style={styles.rightHeader}>
-          <Octicons
-            name="share-android"
-            size={30}
-            color="#1DA1F2"
-            style={styles.shareIcon}
-          />
-          <FontAwesome name="bookmark-o" size={30} color="#1DA1F2" />
+          <TouchableOpacity>
+            <Octicons
+              name="share-android"
+              size={30}
+              color="#1DA1F2"
+              style={styles.shareIcon}
+            />
+          </TouchableOpacity>
+          <TouchableOpacity>
+            <FontAwesome name="bookmark-o" size={30} color="#1DA1F2" />
+          </TouchableOpacity>
         </View>
       </View>
-      <Image source={post[0].image} style={styles.image} />
-      <Text>{post[0].title}</Text>
-    </View>
+      <View style={styles.container}>
+        <Text style={styles.title}>{post[0].title}</Text>
+        <Image source={post[0].image} style={styles.image} />
+        <Text style={styles.description}>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+          possimus rem fuga veniam nemo, quia illum nesciunt natus porro ad
+          voluptates sunt obcaecati ex accusamus quam sint sed sequi pariatur.
+        </Text>
+      </View>
+    </SafeAreaView>
   );
 };
 
