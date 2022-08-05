@@ -6,10 +6,9 @@ const styles = StyleSheet.create({
     borderRadius: 24,
     display: 'flex',
     flexDirection: 'row',
-    // paddingVertical: 8,
-    // paddingHorizontal: 16,
     width: '90%',
     marginLeft: 20,
+    marginBottom: 8,
   },
   image: {
     width: 100,
