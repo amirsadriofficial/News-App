@@ -14,13 +14,12 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     width: '90%',
-    marginLeft: 18,
+    marginHorizontal: 20,
   },
   titleSection: {
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
-    marginHorizontal: 16,
     paddingVertical: 16,
   },
   title: {

@@ -12,7 +12,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     width: '90%',
     marginLeft: 20,
-    marginBottom: 8,
+    marginBottom: 12,
   },
   image: {
     width: 100,
@@ -22,16 +22,17 @@ const styles = StyleSheet.create({
   descriptionContainer: {
     display: 'flex',
     flexDirection: 'row',
-    marginTop: 2,
+    marginTop: 4,
   },
   textContainer: {
     display: 'flex',
     flexDirection: 'column',
-    marginHorizontal: 4,
+    marginHorizontal: 8,
   },
   title: {
-    fontSize: 18,
-    width: 210,
+    fontSize: 17,
+    width: 202,
+    height: 65,
     color: '#282828',
     marginBottom: 8,
   },
