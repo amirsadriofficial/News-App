@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
   descriptionContainer: {
     display: 'flex',
     flexDirection: 'row',
-    marginTop: 4,
+    marginTop: 2,
   },
   textContainer: {
     display: 'flex',
@@ -34,6 +34,18 @@ const styles = StyleSheet.create({
     width: 210,
     color: '#282828',
     marginBottom: 8,
+  },
+  tagsContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  tags: {
+    fontSize: 12,
+    marginLeft: 4,
+  },
+  moreIcon: {
+    marginTop: 4,
   },
 });
 

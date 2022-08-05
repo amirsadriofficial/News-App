@@ -21,21 +21,26 @@ const SavedPost = () => {
     <ScrollView>
       <SafeAreaView style={styles.container}>
         {SavedPostData.map(post => (
-          <View style={styles.postContainer}>
-            <Image source={post.image} style={styles.image} />
-            <View style={styles.descriptionContainer}>
-              <View style={styles.textContainer}>
-                <Text style={styles.title}>{post.title}</Text>
-                <View>
-                  <Octicons name="tag" size={15} color="#999" />
-                  <Text style={styles.tags}>{post.tags}</Text>
+          <TouchableOpacity>
+            <View style={styles.postContainer}>
+              <Image source={post.image} style={styles.image} />
+              <View style={styles.descriptionContainer}>
+                <View style={styles.textContainer}>
+                  <Text style={styles.title}>{post.title}</Text>
+                  <View style={styles.tagsContainer}>
+                    <Octicons name="tag" size={15} color="#999" />
+                    <Text style={styles.tags}>{post.tags}</Text>
+                  </View>
                 </View>
+                <Feather
+                  name="more-vertical"
+                  size={25}
+                  color="#000"
+                  style={styles.moreIcon}
+                />
               </View>
-              <TouchableOpacity>
-                <Feather name="more-vertical" size={25} color="#000" />
-              </TouchableOpacity>
             </View>
-          </View>
+          </TouchableOpacity>
         ))}
       </SafeAreaView>
     </ScrollView>
