@@ -9,6 +9,7 @@ import Home from './screens/home/Home';
 import Explore from './screens/explore/Explore';
 import Saved from './screens/saved/Saved';
 import Profile from './screens/profile/Profile';
+import SinglePost from './screens/single-post/SinglePost';
 
 const Stack = createStackNavigator();
 
@@ -43,6 +44,14 @@ const App = () => {
         <Stack.Screen
           name="Profile"
           component={Profile}
+          options={{
+            headerShown: false,
+            ...TransitionPresets.SlideFromRightIOS,
+          }}
+        />
+        <Stack.Screen
+          name="Single Post"
+          component={SinglePost}
           options={{
             headerShown: false,
             ...TransitionPresets.SlideFromRightIOS,

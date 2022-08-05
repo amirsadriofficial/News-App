@@ -19,7 +19,7 @@ const Saved = ({navigation}: any) => {
             <Entypo name="plus" size={30} color="#000" />
           </TouchableOpacity>
         </View>
-        <SavedPost />
+        <SavedPost navigation={navigation} />
       </SafeAreaView>
     </Layout>
   );

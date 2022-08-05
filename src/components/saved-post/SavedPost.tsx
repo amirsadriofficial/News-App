@@ -16,12 +16,17 @@ import Octicons from 'react-native-vector-icons/Octicons';
 import styles from './styles/SavedPost.style';
 import SavedPostData from '../../utils/saved-posts/SavedPostData';
 
-const SavedPost = () => {
+const SavedPost = ({navigation}: any) => {
   return (
     <ScrollView>
       <SafeAreaView style={styles.container}>
         {SavedPostData.map(post => (
-          <TouchableOpacity>
+          <TouchableOpacity
+            onPress={() =>
+              navigation.navigate('Single Post', {
+                id: post.id,
+              })
+            }>
             <View style={styles.postContainer}>
               <Image source={post.image} style={styles.image} />
               <View style={styles.descriptionContainer}>
