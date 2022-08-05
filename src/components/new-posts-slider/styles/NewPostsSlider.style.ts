@@ -21,6 +21,8 @@ const styles = StyleSheet.create({
   headerButton: {
     fontSize: 14,
     marginRight: 14,
+    color: '#1DA1F2',
+    fontWeight: '500',
   },
   item: {
     display: 'flex',
