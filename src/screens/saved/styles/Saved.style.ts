@@ -8,8 +8,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: 16,
     paddingVertical: 8,
-    borderBottomColor: '#898F9C',
-    borderBottomWidth: 1,
+    borderBottomColor: '#999',
+    borderBottomWidth: 0.5,
   },
   title: {
     fontSize: 32,
