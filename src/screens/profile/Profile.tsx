@@ -7,6 +7,7 @@ import {Text, Image, View} from 'react-native';
 import Layout from '../../containers/layout/Layout';
 import styles from './styles/Profile.style';
 import Avatar from './../../assets/avatar/profile.jpg';
+import SettingItems from './SettingItems';
 
 const Profile = ({navigation}: any) => {
   return (
@@ -16,6 +17,7 @@ const Profile = ({navigation}: any) => {
         <Text style={styles.name}>Amir Sadri</Text>
         <Text style={styles.username}>@amirsadri</Text>
       </View>
+      <SettingItems />
     </Layout>
   );
 };
