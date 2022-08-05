@@ -16,23 +16,47 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   shareIcon: {
-    marginRight: 24,
+    marginRight: 32,
   },
   container: {
-    marginLeft: 16,
+    marginHorizontal: 16,
   },
   image: {
     height: 300,
     width: 350,
     borderRadius: 32,
+    marginVertical: 8,
   },
   title: {
-    fontSize: 30,
+    fontSize: 28,
+    fontWeight: '500',
     color: '#282828',
+    marginVertical: 8,
+  },
+  footer: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginBottom: 8,
+    marginRight: 4,
+  },
+  footerSection: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  tags: {
+    marginLeft: 4,
+  },
+  date: {
+    marginLeft: 4,
   },
   description: {
-    fontSize: 30,
+    fontSize: 16,
     color: '#282828',
+    marginVertical: 8,
   },
 });
 
