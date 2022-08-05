@@ -2,6 +2,10 @@ import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
+    marginTop: 16,
+    marginBottom: 150,
+  },
+  postContainer: {
     backgroundColor: '#fff',
     borderRadius: 24,
     display: 'flex',

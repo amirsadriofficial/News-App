@@ -8,7 +8,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: 16,
     paddingVertical: 8,
-    marginBottom: 16,
     borderBottomColor: '#898F9C',
     borderBottomWidth: 1,
   },
