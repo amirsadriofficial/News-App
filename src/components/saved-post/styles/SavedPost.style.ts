@@ -19,6 +19,11 @@ const styles = StyleSheet.create({
     height: 100,
     borderRadius: 24,
   },
+  title: {
+    fontSize: 18,
+    width: 235,
+    color: '#282828',
+  },
 });
 
 export default styles;

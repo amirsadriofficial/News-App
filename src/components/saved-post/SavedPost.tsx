@@ -14,7 +14,7 @@ const SavedPost = () => {
         {SavedPostData.map(post => (
           <View style={styles.postContainer}>
             <Image source={post.image} style={styles.image} />
-            <Text>{post.title}</Text>
+            <Text style={styles.title}>{post.title}</Text>
           </View>
         ))}
       </SafeAreaView>
