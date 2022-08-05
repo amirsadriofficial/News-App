@@ -14,7 +14,7 @@ import {
   ImageSourcePropType,
 } from 'react-native';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-import styles from './styles/NewPostsSlider.style';
+import styles from './styles/SavedPost.style';
 
 export interface SlideItems {
   id: string;
