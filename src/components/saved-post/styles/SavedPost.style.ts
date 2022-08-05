@@ -19,10 +19,21 @@ const styles = StyleSheet.create({
     height: 100,
     borderRadius: 24,
   },
+  descriptionContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    marginTop: 4,
+  },
+  textContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    marginHorizontal: 4,
+  },
   title: {
     fontSize: 18,
-    width: 235,
+    width: 210,
     color: '#282828',
+    marginBottom: 8,
   },
 });
 
