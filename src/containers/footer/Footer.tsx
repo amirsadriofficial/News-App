@@ -2,13 +2,11 @@
  * @format
  */
 
-import React, {Children} from 'react';
+import React from 'react';
 import {SafeAreaView, View, Text, TouchableOpacity} from 'react-native';
 import {useRoute} from '@react-navigation/native';
-import Feather from 'react-native-vector-icons/Feather';
-import Octicons from 'react-native-vector-icons/Octicons';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
-import AntDesign from 'react-native-vector-icons/AntDesign';
 import styles from './styles/Footer.style';
 
 type ItemProps = {
@@ -18,11 +16,12 @@ type ItemProps = {
 };
 
 const Item = ({navigation, title, children}: ItemProps) => {
+  const route = useRoute();
   return (
     <TouchableOpacity onPress={() => navigation.navigate(title)}>
       <View style={styles.items}>
         {children}
-        <Text>{title}</Text>
+        <Text style={route.name === title ? styles.active : null}>{title}</Text>
       </View>
     </TouchableOpacity>
   );
@@ -34,34 +33,33 @@ const Footer = ({navigation}: any) => {
   return (
     <SafeAreaView style={styles.footer}>
       <Item navigation={navigation} title="Home">
-        <Octicons name="home" size={30} color="#000" />
+        {route.name === 'Home' ? (
+          <Ionicons name="home" size={30} color="#000" />
+        ) : (
+          <Ionicons name="home-outline" size={30} color="#000" />
+        )}
       </Item>
-      <TouchableOpacity onPress={() => navigation.navigate('Home')}>
-        <View style={styles.items}>
-          <Octicons name="home" size={30} color="#000" />
-          <Text>Home</Text>
-        </View>
-      </TouchableOpacity>
-      <TouchableOpacity onPress={() => navigation.navigate('Explore')}>
-        <View style={styles.items}>
-          <Feather name="search" size={30} color="#000" />
-          <Text>Explore</Text>
-        </View>
-      </TouchableOpacity>
-      <TouchableOpacity onPress={() => navigation.navigate('Saved')}>
-        <View style={styles.items}>
+      <Item navigation={navigation} title="Explore">
+        {route.name === 'Explore' ? (
+          <Ionicons name="md-search" size={30} color="#000" />
+        ) : (
+          <Ionicons name="search-outline" size={30} color="#000" />
+        )}
+      </Item>
+      <Item navigation={navigation} title="Saved">
+        {route.name === 'Saved' ? (
+          <FontAwesome name="bookmark" size={30} color="#000" />
+        ) : (
           <FontAwesome name="bookmark-o" size={30} color="#000" />
-          <Text>Saved</Text>
-        </View>
-      </TouchableOpacity>
-      <TouchableOpacity onPress={() => navigation.navigate('Profile')}>
-        <View style={styles.items}>
-          <AntDesign name="user" size={30} color="#000" />
-          <Text style={route.name === 'Profile' ? styles.active : null}>
-            Profile
-          </Text>
-        </View>
-      </TouchableOpacity>
+        )}
+      </Item>
+      <Item navigation={navigation} title="Profile">
+        {route.name === 'Profile' ? (
+          <FontAwesome name="user" size={30} color="#000" />
+        ) : (
+          <FontAwesome name="user-o" size={30} color="#000" />
+        )}
+      </Item>
     </SafeAreaView>
   );
 };

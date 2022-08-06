@@ -6,8 +6,10 @@ export default StyleSheet.create({
     flexDirection: 'row',
     position: 'absolute',
     bottom: 0,
-    backgroundColor: '#eee',
+    backgroundColor: '#fff',
     paddingVertical: 10,
+    borderTopWidth: 1,
+    borderTopColor: '#eee',
   },
   items: {
     display: 'flex',
@@ -17,6 +19,6 @@ export default StyleSheet.create({
     marginHorizontal: 27,
   },
   active: {
-    color: '#1DA1F2',
+    color: '#282828',
   },
 });
