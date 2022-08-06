@@ -33,13 +33,13 @@ const SinglePost = ({route, navigation}: any) => {
             <TouchableOpacity>
               <Octicons
                 name="share-android"
-                size={30}
+                size={25}
                 color="#282828"
                 style={styles.shareIcon}
               />
             </TouchableOpacity>
             <TouchableOpacity>
-              <FontAwesome name="bookmark-o" size={35} color="#282828" />
+              <FontAwesome name="bookmark-o" size={30} color="#282828" />
             </TouchableOpacity>
           </View>
         </View>
