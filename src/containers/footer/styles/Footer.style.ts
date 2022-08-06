@@ -9,11 +9,14 @@ export default StyleSheet.create({
     backgroundColor: '#eee',
     paddingVertical: 10,
   },
-  footerItems: {
+  items: {
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
     marginHorizontal: 27,
+  },
+  active: {
+    color: '#1DA1F2',
   },
 });
