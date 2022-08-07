@@ -24,7 +24,7 @@ export interface SlideItems {
 }
 
 const truncate = (title: any) => {
-  return title.length > 28 ? title.slice(0, 28 - 1) + '...' : title;
+  return title.length > 60 ? title.slice(0, 60 - 1) + '...' : title;
 };
 
 const Item = ({item}: {item: SlideItems}) => (
