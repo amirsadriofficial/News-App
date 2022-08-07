@@ -8,7 +8,7 @@ import Layout from '../../containers/layout/Layout';
 import Header from './Header';
 import PopularPoliticsSlider from './PopularPoliticsSlider';
 import PopularSportSlider from './PopularSportSlider';
-import PopularScientificSlider from './PopularPoliticsSlider';
+import PopularScientificSlider from './PopularScientificSlider';
 import PopularTechnologySlider from './PopularTechnologySlider';
 import PopularEconomicalSlider from './PopularEconomicalSlider';
 import PopularSocialSlider from './PopularSocialSlider';
