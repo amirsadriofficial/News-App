@@ -2,7 +2,7 @@
  * @format
  */
 
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
 import Layout from '../../containers/layout/Layout';
 import Header from './Header';
@@ -20,9 +20,23 @@ import {
 // import styles from './styles/Home.style';
 
 const PopularPoliticsSlider = () => {
+  const [news, setNews] = useState();
+  const getNews = () => {
+    return fetch(
+      'https://newsapi.org/v2/everything?q=bitcoin&pageSize=10&apiKey=e35894b53c8d424387c2406d36370027',
+    )
+      .then(response => response.json())
+      .then(response => {
+        setNews(response.articles);
+      });
+  };
+
+  useEffect(() => {
+    getNews();
+  }, []);
   return (
     <>
-      <PopularPostsSlider data={PopularPoliticsData} />
+      <PopularPostsSlider data={news} />
       <NewPostsSlider data={PopularSportsData} />
     </>
   );
