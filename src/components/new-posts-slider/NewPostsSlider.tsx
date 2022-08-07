@@ -23,12 +23,16 @@ export interface SlideItems {
   date: string;
 }
 
+const truncate = (title: any) => {
+  return title.length > 28 ? title.slice(0, 28 - 1) + '...' : title;
+};
+
 const Item = ({item}: {item: SlideItems}) => (
   <TouchableOpacity>
     <View style={styles.item}>
       <Image source={item.image} style={styles.image} />
       <View style={styles.description}>
-        <Text style={styles.title}>{item.title}</Text>
+        <Text style={styles.title}>{truncate(item.title)}</Text>
         <View style={styles.footer}>
           <MaterialIcons name="update" size={20} color="#999" />
           <Text style={styles.date}>{item.date}</Text>
