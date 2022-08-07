@@ -7,7 +7,7 @@ import PopularPostsSlider from '../../components/popular-posts-slider/PopularPos
 import NewPostsSlider from '../../components/new-posts-slider/NewPostsSlider';
 import {PopularSportsData} from '../../utils/home-posts/PopularPostsData';
 
-const PopularScientificSlider = () => {
+const PopularTechnologySlider = () => {
   const [news, setNews] = useState();
   const getNews = () => {
     return fetch(
@@ -29,4 +29,4 @@ const PopularScientificSlider = () => {
   );
 };
 
-export default PopularScientificSlider;
+export default PopularTechnologySlider;

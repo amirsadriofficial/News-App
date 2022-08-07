@@ -6,68 +6,13 @@ import React from 'react';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
 import Layout from '../../containers/layout/Layout';
 import Header from './Header';
-import PopularPostsSlider from '../../components/popular-posts-slider/PopularPostsSlider';
-import NewPostsSlider from '../../components/new-posts-slider/NewPostsSlider';
-import {
-  PopularPoliticsData,
-  PopularSportsData,
-  PopularScientificData,
-  PopularTechnologyData,
-  PopularEconomicalData,
-  PopularSocialData,
-  PopularEducationalData,
-} from '../../utils/home-posts/PopularPostsData';
 import PopularPoliticsSlider from './PopularPoliticsSlider';
-// import styles from './styles/Home.style';
-
-const PopularSportSlider = () => {
-  return (
-    <>
-      <PopularPostsSlider data={PopularPoliticsData} />
-      <NewPostsSlider data={PopularSportsData} />
-    </>
-  );
-};
-const PopularScientificSlider = () => {
-  return (
-    <>
-      <PopularPostsSlider data={PopularPoliticsData} />
-      <NewPostsSlider data={PopularScientificData} />
-    </>
-  );
-};
-const PopularTechnologySlider = () => {
-  return (
-    <>
-      <PopularPostsSlider data={PopularPoliticsData} />
-      <NewPostsSlider data={PopularTechnologyData} />
-    </>
-  );
-};
-const PopularEconomicalSlider = () => {
-  return (
-    <>
-      <PopularPostsSlider data={PopularPoliticsData} />
-      <NewPostsSlider data={PopularEconomicalData} />
-    </>
-  );
-};
-const PopularSocialSlider = () => {
-  return (
-    <>
-      <PopularPostsSlider data={PopularPoliticsData} />
-      <NewPostsSlider data={PopularSocialData} />
-    </>
-  );
-};
-const PopularEducationalSlider = () => {
-  return (
-    <>
-      <PopularPostsSlider data={PopularPoliticsData} />
-      <NewPostsSlider data={PopularEducationalData} />
-    </>
-  );
-};
+import PopularSportSlider from './PopularSportSlider';
+import PopularScientificSlider from './PopularPoliticsSlider';
+import PopularTechnologySlider from './PopularTechnologySlider';
+import PopularEconomicalSlider from './PopularEconomicalSlider';
+import PopularSocialSlider from './PopularSocialSlider';
+import PopularEducationalSlider from './PopularEducationalSlider';
 
 const Tab = createMaterialTopTabNavigator();
 
