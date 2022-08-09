@@ -13,6 +13,7 @@ import {
 } from 'react-native';
 import Feather from 'react-native-vector-icons/Feather';
 import Octicons from 'react-native-vector-icons/Octicons';
+import Spinner from 'react-native-loading-spinner-overlay';
 import styles from './styles/ScreenPosts.style';
 // import SavedPostData from '../../utils/saved-posts/SavedPostData';
 
@@ -69,7 +70,11 @@ const ScreenPosts = ({subject, navigation}: any) => {
           ))}
         </SafeAreaView>
       ) : (
-        <Text>Loading...</Text>
+        <Spinner
+          visible={news !== undefined ? false : true}
+          textContent={'Loading...'}
+          textStyle={styles.spinnerText}
+        />
       )}
     </ScrollView>
   );

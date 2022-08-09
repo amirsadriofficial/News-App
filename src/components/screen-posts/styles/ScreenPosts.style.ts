@@ -48,6 +48,10 @@ const styles = StyleSheet.create({
   moreIcon: {
     marginTop: 4,
   },
+  spinnerText: {
+    color: '#fff',
+    fontWeight: '800',
+  },
 });
 
 export default styles;
