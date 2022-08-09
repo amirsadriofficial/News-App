@@ -28,12 +28,7 @@ const SavedPosts = ({navigation}: any) => {
               })
             }>
             <View style={styles.postContainer}>
-              <Image
-                source={{
-                  uri: post.image,
-                }}
-                style={styles.image}
-              />
+              <Image source={post.image} style={styles.image} />
               <View style={styles.descriptionContainer}>
                 <View style={styles.textContainer}>
                   <Text style={styles.title}>{post.title}</Text>
