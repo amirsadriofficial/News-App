@@ -16,11 +16,11 @@ import Octicons from 'react-native-vector-icons/Octicons';
 import styles from './styles/ScreenPosts.style';
 // import SavedPostData from '../../utils/saved-posts/SavedPostData';
 
-const ScreenPosts = ({navigation}: any) => {
+const ScreenPosts = ({subject, navigation}: any) => {
   const [news, setNews] = useState();
   const getNews = () => {
     return fetch(
-      'https://newsapi.org/v2/everything?q=politics&pageSize=10&apiKey=e35894b53c8d424387c2406d36370027',
+      `https://newsapi.org/v2/everything?q=${subject}&pageSize=100&apiKey=e35894b53c8d424387c2406d36370027`,
     )
       .then(response => response.json())
       .then(response => {
@@ -30,9 +30,10 @@ const ScreenPosts = ({navigation}: any) => {
   useEffect(() => {
     getNews();
   }, []);
+
   return (
     <ScrollView>
-      {news ? (
+      {news !== undefined ? (
         <SafeAreaView style={styles.container}>
           {news.map(item => (
             <TouchableOpacity
@@ -42,7 +43,12 @@ const ScreenPosts = ({navigation}: any) => {
                 })
               }>
               <View style={styles.postContainer}>
-                <Image source={item.urlToImage} style={styles.image} />
+                <Image
+                  source={{
+                    uri: item.urlToImage,
+                  }}
+                  style={styles.image}
+                />
                 <View style={styles.descriptionContainer}>
                   <View style={styles.textContainer}>
                     <Text style={styles.title}>{item.title}</Text>
