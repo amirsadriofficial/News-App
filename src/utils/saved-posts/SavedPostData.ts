@@ -1,11 +1,11 @@
-import Post1 from './../../assets/posts/1.png';
-import Post2 from './../../assets/posts/2.png';
-import Post3 from './../../assets/posts/3.png';
-import Post4 from './../../assets/posts/4.png';
-import Post5 from './../../assets/posts/5.png';
-import Post6 from './../../assets/posts/6.png';
-import Post7 from './../../assets/posts/7.png';
-import Post8 from './../../assets/posts/8.png';
+import Post1 from './../../assets/posts/1.jpg';
+import Post2 from './../../assets/posts/2.jpg';
+import Post3 from './../../assets/posts/3.jpg';
+import Post4 from './../../assets/posts/4.jpg';
+import Post5 from './../../assets/posts/5.jpg';
+import Post6 from './../../assets/posts/6.jpg';
+import Post7 from './../../assets/posts/7.jpg';
+import Post8 from './../../assets/posts/8.jpg';
 
 const SavedPostData = [
   {

@@ -1,11 +1,11 @@
-import PoliticsPost1 from './../../assets/posts/1.png';
-import PoliticsPost2 from './../../assets/posts/2.png';
-import PoliticsPost3 from './../../assets/posts/3.png';
-import PoliticsPost4 from './../../assets/posts/4.png';
-import PoliticsPost5 from './../../assets/posts/5.png';
-import PoliticsPost6 from './../../assets/posts/6.png';
-import PoliticsPost7 from './../../assets/posts/7.png';
-import PoliticsPost8 from './../../assets/posts/8.png';
+import PoliticsPost1 from './../../assets/posts/1.jpg';
+import PoliticsPost2 from './../../assets/posts/2.jpg';
+import PoliticsPost3 from './../../assets/posts/3.jpg';
+import PoliticsPost4 from './../../assets/posts/4.jpg';
+import PoliticsPost5 from './../../assets/posts/5.jpg';
+import PoliticsPost6 from './../../assets/posts/6.jpg';
+import PoliticsPost7 from './../../assets/posts/7.jpg';
+import PoliticsPost8 from './../../assets/posts/8.jpg';
 
 export const PopularPoliticsData = [
   {
