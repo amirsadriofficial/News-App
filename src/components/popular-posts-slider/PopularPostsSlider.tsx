@@ -28,7 +28,7 @@ const truncate = (title: any) => {
 };
 
 const Item = ({item}: {item: SlideItems}) => (
-  <TouchableOpacity>
+  <TouchableOpacity activeOpacity={1}>
     <View style={styles.item}>
       <Image
         source={{
@@ -39,8 +39,8 @@ const Item = ({item}: {item: SlideItems}) => (
       <Text style={styles.title}>{truncate(item.title)}</Text>
       <View style={styles.footer}>
         <View style={styles.dateSection}>
-          <MaterialIcons name="update" size={15} color="#999" />
-          <Text style={styles.date}>{item.publishedAt}</Text>
+          <MaterialIcons name="update" size={18} color="#999" />
+          <Text style={styles.date}>{item.publishedAt.split('T').shift()}</Text>
         </View>
         <FontAwesome name="bookmark-o" size={25} color="#000" />
       </View>

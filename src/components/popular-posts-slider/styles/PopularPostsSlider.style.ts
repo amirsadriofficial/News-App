@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 18,
     width: 300,
-    height: 42,
+    height: 45,
     marginVertical: 8,
     color: '#282828',
   },
@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   date: {
-    fontSize: 10,
+    fontSize: 12,
     width: 150,
     marginLeft: 4,
   },
