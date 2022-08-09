@@ -2,7 +2,7 @@ import Sport from './../../assets/category/sport.jpg';
 import Politics from './../../assets/category/politics.jpg';
 import Art from './../../assets/category/art.jpg';
 import Food from './../../assets/category/food.jpg';
-import Educational from './../../assets/category/educational.png';
+import Educational from './../../assets/category/educational.jpg';
 import Business from './../../assets/category/business.jpg';
 import Health from './../../assets/category/health.jpg';
 import Technology from './../../assets/category/technology.jpg';
