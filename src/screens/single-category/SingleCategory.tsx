@@ -6,11 +6,13 @@ import React from 'react';
 import {Text, SafeAreaView, ScrollView} from 'react-native';
 // import styles from './styles/SingleCategory.style';
 
-const SingleCategory = () => {
+const SingleCategory = ({route}: any) => {
+  const {category} = route.params;
+
   return (
     <ScrollView>
       <SafeAreaView>
-        <Text>Hello World!</Text>
+        <Text>Hello World! {category}</Text>
       </SafeAreaView>
     </ScrollView>
   );
