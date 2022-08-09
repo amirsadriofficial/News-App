@@ -10,6 +10,7 @@ import Explore from './screens/explore/Explore';
 import Saved from './screens/saved/Saved';
 import Profile from './screens/profile/Profile';
 import SinglePost from './screens/single-post/SinglePost';
+import SingleCategory from './screens/single-category/SingleCategory';
 
 const Stack = createStackNavigator();
 
@@ -52,6 +53,14 @@ const App = () => {
         <Stack.Screen
           name="Single Post"
           component={SinglePost}
+          options={{
+            headerShown: false,
+            ...TransitionPresets.SlideFromRightIOS,
+          }}
+        />
+        <Stack.Screen
+          name="Single Category"
+          component={SingleCategory}
           options={{
             headerShown: false,
             ...TransitionPresets.SlideFromRightIOS,
