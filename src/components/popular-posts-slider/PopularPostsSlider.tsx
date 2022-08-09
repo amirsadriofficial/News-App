@@ -24,7 +24,7 @@ export interface SlideItems {
 }
 
 const truncate = (title: any) => {
-  return title.length > 28 ? title.slice(0, 28 - 1) + '...' : title;
+  return title.length > 60 ? title.slice(0, 60 - 1) + '...' : title;
 };
 
 const Item = ({item}: {item: SlideItems}) => (
@@ -39,7 +39,7 @@ const Item = ({item}: {item: SlideItems}) => (
       <Text style={styles.title}>{truncate(item.title)}</Text>
       <View style={styles.footer}>
         <View style={styles.dateSection}>
-          <MaterialIcons name="update" size={20} color="#999" />
+          <MaterialIcons name="update" size={15} color="#999" />
           <Text style={styles.date}>{item.publishedAt}</Text>
         </View>
         <FontAwesome name="bookmark-o" size={25} color="#000" />
@@ -61,13 +61,17 @@ const PopularPostsSlider = ({data}: any) => {
           <Text style={styles.headerButton}>Show All</Text>
         </TouchableOpacity>
       </View>
-      <FlatList
-        data={data}
-        renderItem={renderItem}
-        keyExtractor={item => item.id}
-        horizontal
-        showsHorizontalScrollIndicator={false}
-      />
+      {data ? (
+        <FlatList
+          data={data}
+          renderItem={renderItem}
+          keyExtractor={item => item.id}
+          horizontal
+          showsHorizontalScrollIndicator={false}
+        />
+      ) : (
+        <Text>Loading...</Text>
+      )}
     </SafeAreaView>
   );
 };
