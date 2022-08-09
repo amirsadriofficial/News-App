@@ -6,7 +6,7 @@ import React from 'react';
 import {Text, TouchableOpacity, View, SafeAreaView} from 'react-native';
 import Entypo from 'react-native-vector-icons/Entypo';
 import Layout from '../../containers/layout/Layout';
-import SavedPost from '../../components/saved-post/SavedPost';
+import ScreenPosts from '../../components/screen-posts/ScreenPosts';
 import styles from './styles/Saved.style';
 
 const Saved = ({navigation}: any) => {
@@ -19,7 +19,7 @@ const Saved = ({navigation}: any) => {
             <Entypo name="plus" size={30} color="#000" />
           </TouchableOpacity>
         </View>
-        <SavedPost navigation={navigation} />
+        <ScreenPosts navigation={navigation} />
       </SafeAreaView>
     </Layout>
   );

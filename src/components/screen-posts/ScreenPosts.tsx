@@ -13,10 +13,10 @@ import {
 } from 'react-native';
 import Feather from 'react-native-vector-icons/Feather';
 import Octicons from 'react-native-vector-icons/Octicons';
-import styles from './styles/SavedPost.style';
+import styles from './styles/ScreenPosts.style';
 import SavedPostData from '../../utils/saved-posts/SavedPostData';
 
-const SavedPost = ({navigation}: any) => {
+const ScreenPosts = ({navigation}: any) => {
   return (
     <ScrollView>
       <SafeAreaView style={styles.container}>
@@ -52,4 +52,4 @@ const SavedPost = ({navigation}: any) => {
   );
 };
 
-export default SavedPost;
+export default ScreenPosts;

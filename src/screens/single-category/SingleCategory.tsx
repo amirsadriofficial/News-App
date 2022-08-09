@@ -3,8 +3,8 @@
  */
 
 import React from 'react';
-import {Text, SafeAreaView, ScrollView} from 'react-native';
-// import styles from './styles/SingleCategory.style';
+import {Text, SafeAreaView, ScrollView, View} from 'react-native';
+import styles from './styles/SingleCategory.style';
 
 const SingleCategory = ({route}: any) => {
   const {category} = route.params;
@@ -12,7 +12,9 @@ const SingleCategory = ({route}: any) => {
   return (
     <ScrollView>
       <SafeAreaView>
-        <Text>Hello World! {category}</Text>
+        <View style={styles.container}>
+          <Text style={styles.title}>{category}</Text>
+        </View>
       </SafeAreaView>
     </ScrollView>
   );
