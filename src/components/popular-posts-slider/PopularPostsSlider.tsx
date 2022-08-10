@@ -2,7 +2,7 @@
  * @format
  */
 
-import React from 'react';
+import React, {useState} from 'react';
 import {
   SafeAreaView,
   View,
@@ -28,26 +28,40 @@ const truncate = (title: any) => {
   return title.length > 60 ? title.slice(0, 60 - 1) + '...' : title;
 };
 
-const Item = ({item}: {item: SlideItems}) => (
-  <TouchableOpacity activeOpacity={1} key={item.id}>
-    <View style={styles.item}>
-      <Image
-        source={{
-          uri: item.urlToImage,
-        }}
-        style={styles.image}
-      />
-      <Text style={styles.title}>{truncate(item.title)}</Text>
-      <View style={styles.footer}>
-        <View style={styles.dateSection}>
-          <MaterialIcons name="update" size={18} color="#999" />
-          <Text style={styles.date}>{item.publishedAt.split('T').shift()}</Text>
+const Item = ({item}: {item: SlideItems}) => {
+  const [saved, setSaved] = useState(false);
+
+  return (
+    <TouchableOpacity activeOpacity={1} key={item.id}>
+      <View style={styles.item}>
+        <Image
+          source={{
+            uri: item.urlToImage,
+          }}
+          style={styles.image}
+        />
+        <Text style={styles.title}>{truncate(item.title)}</Text>
+        <View style={styles.footer}>
+          <View style={styles.dateSection}>
+            <MaterialIcons name="update" size={18} color="#999" />
+            <Text style={styles.date}>
+              {item.publishedAt.split('T').shift()}
+            </Text>
+          </View>
+          {saved === true ? (
+            <TouchableOpacity onPress={() => setSaved(false)}>
+              <FontAwesome name="bookmark" size={25} color="#000" />
+            </TouchableOpacity>
+          ) : (
+            <TouchableOpacity onPress={() => setSaved(true)}>
+              <FontAwesome name="bookmark-o" size={25} color="#000" />
+            </TouchableOpacity>
+          )}
         </View>
-        <FontAwesome name="bookmark-o" size={25} color="#000" />
       </View>
-    </View>
-  </TouchableOpacity>
-);
+    </TouchableOpacity>
+  );
+};
 
 const PopularPostsSlider = ({data}: any) => {
   const renderItem: ListRenderItem<SlideItems> = ({item}) => (
