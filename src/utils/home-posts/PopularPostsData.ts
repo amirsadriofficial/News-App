@@ -1,23 +1,61 @@
-import PoliticsPost1 from './../../assets/posts/1.jpg';
-import PoliticsPost2 from './../../assets/posts/2.jpg';
-import PoliticsPost3 from './../../assets/posts/3.jpg';
-import PoliticsPost4 from './../../assets/posts/4.jpg';
-import PoliticsPost5 from './../../assets/posts/5.jpg';
-import PoliticsPost6 from './../../assets/posts/6.jpg';
-import PoliticsPost7 from './../../assets/posts/7.jpg';
-import PoliticsPost8 from './../../assets/posts/8.jpg';
+import Post1 from './../../assets/posts/1.jpg';
+import Post2 from './../../assets/posts/2.jpg';
+import Post3 from './../../assets/posts/3.jpg';
+import Post4 from './../../assets/posts/4.jpg';
+import Post5 from './../../assets/posts/5.jpg';
+import Post6 from './../../assets/posts/6.jpg';
+import Post7 from './../../assets/posts/7.jpg';
+import Post8 from './../../assets/posts/8.jpg';
 
-export const PopularPoliticsData = [
+const NewPostsData = [
   {
-    id: '1',
-    image: PoliticsPost1,
+    id: 'post-1',
+    image: Post1,
     title: 'Tracking the States Where Abortion Is Now Banned',
     date: '24 june 2022',
   },
   {
-    id: '2',
-    image: PoliticsPost2,
+    id: 'post-2',
+    image: Post2,
+    title: 'Tracking the States Where Abortion Is Now Banned',
+    date: '24 augous 1953',
+  },
+  {
+    id: 'post-3',
+    image: Post3,
+    title: 'Tracking the States Where Abortion Is Now Banned',
+    date: '24 june 2022',
+  },
+  {
+    id: 'post-4',
+    image: Post4,
+    title: 'Tracking the States Where Abortion Is Now Banned',
+    date: '24 augous 1953',
+  },
+  {
+    id: 'post-5',
+    image: Post5,
+    title: 'Tracking the States Where Abortion Is Now Banned',
+    date: '24 june 2022',
+  },
+  {
+    id: 'post-6',
+    image: Post6,
+    title: 'Tracking the States Where Abortion Is Now Banned',
+    date: '24 augous 1953',
+  },
+  {
+    id: 'post-7',
+    image: Post7,
+    title: 'Tracking the States Where Abortion Is Now Banned',
+    date: '24 june 2022',
+  },
+  {
+    id: 'post-8',
+    image: Post8,
     title: 'Tracking the States Where Abortion Is Now Banned',
     date: '24 augous 1953',
   },
 ];
+
+export default NewPostsData;
