@@ -11,6 +11,7 @@ import {
   TouchableOpacity,
   ListRenderItem,
   Image,
+  ActivityIndicator,
 } from 'react-native';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
@@ -70,7 +71,9 @@ const PopularPostsSlider = ({data}: any) => {
           showsHorizontalScrollIndicator={false}
         />
       ) : (
-        <Text>Loading...</Text>
+        <SafeAreaView style={styles.loadingSection}>
+          <ActivityIndicator style={styles.loading} />
+        </SafeAreaView>
       )}
     </SafeAreaView>
   );
