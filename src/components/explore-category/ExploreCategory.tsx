@@ -14,6 +14,7 @@ const ExploreCategory = ({navigation}: any) => {
       <SafeAreaView style={styles.container}>
         {ExploreCategoryData.map(category => (
           <TouchableOpacity
+            key={category.id}
             onPress={() =>
               navigation.navigate('Single Category', {
                 category: category.title,
