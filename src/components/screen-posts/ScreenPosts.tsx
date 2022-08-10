@@ -38,6 +38,7 @@ const ScreenPosts = ({subject, navigation}: any) => {
         <SafeAreaView style={styles.container}>
           {news.map(item => (
             <TouchableOpacity
+              key={item.id}
               onPress={() =>
                 navigation.navigate('Single Post', {
                   id: item.id,
