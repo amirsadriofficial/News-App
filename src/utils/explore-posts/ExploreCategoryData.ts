@@ -9,42 +9,42 @@ import Technology from './../../assets/category/technology.jpg';
 
 const ExploreCategoryData = [
   {
-    id: '1',
+    id: 'sport-1',
     image: Sport,
     title: 'Sport',
   },
   {
-    id: '2',
+    id: 'politics-2',
     image: Politics,
     title: 'Politics',
   },
   {
-    id: '3',
+    id: 'art-3',
     image: Art,
     title: 'Art',
   },
   {
-    id: '4',
+    id: 'food-4',
     image: Food,
     title: 'Food',
   },
   {
-    id: '5',
+    id: 'educational-5',
     image: Educational,
     title: 'Educational',
   },
   {
-    id: '6',
+    id: 'business-6',
     image: Business,
     title: 'Business',
   },
   {
-    id: '7',
+    id: 'health-7',
     image: Health,
     title: 'Health',
   },
   {
-    id: '8',
+    id: 'technology-8',
     image: Technology,
     title: 'Technology',
   },
