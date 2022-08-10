@@ -2,7 +2,7 @@
  * @format
  */
 
-import React from 'react';
+import React, {useState} from 'react';
 import {
   Text,
   View,
@@ -21,6 +21,7 @@ import styles from './styles/SinglePost.style';
 const SinglePost = ({route, navigation}: any) => {
   const {id} = route.params;
   const post = SavedPostData.filter(obj => obj.id === id);
+  const [saved, setSaved] = useState(true);
 
   return (
     <ScrollView>
@@ -38,9 +39,15 @@ const SinglePost = ({route, navigation}: any) => {
                 style={styles.shareIcon}
               />
             </TouchableOpacity>
-            <TouchableOpacity>
-              <FontAwesome name="bookmark-o" size={30} color="#282828" />
-            </TouchableOpacity>
+            {saved === true ? (
+              <TouchableOpacity onPress={() => setSaved(false)}>
+                <FontAwesome name="bookmark" size={30} color="#000" />
+              </TouchableOpacity>
+            ) : (
+              <TouchableOpacity onPress={() => setSaved(true)}>
+                <FontAwesome name="bookmark-o" size={30} color="#000" />
+              </TouchableOpacity>
+            )}
           </View>
         </View>
         <View style={styles.container}>
