@@ -15,9 +15,11 @@ import Feather from 'react-native-vector-icons/Feather';
 import Octicons from 'react-native-vector-icons/Octicons';
 import Spinner from 'react-native-loading-spinner-overlay';
 import styles from './styles/ScreenPosts.style';
-// import SavedPostData from '../../utils/saved-posts/SavedPostData';
 
-const ScreenPosts = ({subject, navigation}: any) => {
+type ScreenPostsProps = {
+  subject: string;
+};
+const ScreenPosts = ({subject}: ScreenPostsProps) => {
   const [news, setNews] = useState();
   const getNews = () => {
     return fetch(
@@ -37,13 +39,7 @@ const ScreenPosts = ({subject, navigation}: any) => {
       {news !== undefined ? (
         <SafeAreaView style={styles.container}>
           {news.map(item => (
-            <TouchableOpacity
-              key={item.id}
-              onPress={() =>
-                navigation.navigate('Single Post', {
-                  id: item.id,
-                })
-              }>
+            <TouchableOpacity key={item.id}>
               <View style={styles.postContainer}>
                 <Image
                   source={{
