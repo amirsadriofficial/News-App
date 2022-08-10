@@ -12,7 +12,7 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import Feather from 'react-native-vector-icons/Feather';
-import Octicons from 'react-native-vector-icons/Octicons';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Spinner from 'react-native-loading-spinner-overlay';
 import styles from './styles/ScreenPosts.style';
 
@@ -51,8 +51,10 @@ const ScreenPosts = ({subject}: ScreenPostsProps) => {
                   <View style={styles.textContainer}>
                     <Text style={styles.title}>{item.title}</Text>
                     <View style={styles.tagsContainer}>
-                      <Octicons name="tag" size={15} color="#999" />
-                      <Text style={styles.tags}>{item.tags}</Text>
+                      <MaterialIcons name="update" size={15} color="#999" />
+                      <Text style={styles.tags}>
+                        {item.publishedAt.split('T').shift()}
+                      </Text>
                     </View>
                   </View>
                   <Feather

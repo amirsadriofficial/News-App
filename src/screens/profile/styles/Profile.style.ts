@@ -11,6 +11,8 @@ const styles = StyleSheet.create({
     borderBottomColor: '#999',
   },
   image: {
+    width: 128,
+    height: 128,
     borderRadius: 100,
   },
   name: {
