@@ -22,6 +22,7 @@ const SavedPosts = ({navigation}: any) => {
       <SafeAreaView style={styles.container}>
         {SavedPostData.map(post => (
           <TouchableOpacity
+            key={post.id}
             onPress={() =>
               navigation.navigate('Single Post', {
                 id: post.id,
