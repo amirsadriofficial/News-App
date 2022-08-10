@@ -28,7 +28,7 @@ const truncate = (title: any) => {
 };
 
 const Item = ({item}: {item: SlideItems}) => (
-  <TouchableOpacity>
+  <TouchableOpacity key={item.id}>
     <View style={styles.item}>
       <Image source={item.image} style={styles.image} />
       <View style={styles.description}>
