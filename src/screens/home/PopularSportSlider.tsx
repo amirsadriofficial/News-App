@@ -5,7 +5,7 @@
 import React, {useState, useEffect} from 'react';
 import PopularPostsSlider from '../../components/popular-posts-slider/PopularPostsSlider';
 import NewPostsSlider from '../../components/new-posts-slider/NewPostsSlider';
-import {PopularSportsData} from '../../utils/home-posts/PopularPostsData';
+import NewPostsData from '../../utils/home-posts/NewPostsData';
 
 const PopularSportSlider = () => {
   const [news, setNews] = useState();
@@ -24,7 +24,7 @@ const PopularSportSlider = () => {
   return (
     <>
       <PopularPostsSlider data={news} />
-      <NewPostsSlider data={PopularSportsData} />
+      <NewPostsSlider data={NewPostsData} />
     </>
   );
 };
