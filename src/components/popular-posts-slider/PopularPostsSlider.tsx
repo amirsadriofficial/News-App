@@ -72,7 +72,7 @@ const PopularPostsSlider = ({data}: any) => {
         />
       ) : (
         <SafeAreaView style={styles.loadingSection}>
-          <ActivityIndicator style={styles.loading} />
+          <ActivityIndicator size={60} color="#1DA1F2" />
         </SafeAreaView>
       )}
     </SafeAreaView>
